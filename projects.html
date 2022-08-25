@@ -19,160 +19,190 @@
             </div>
             <nav>
                 <ul class="lavaLampWithImage" id="lava_menu">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="about.html">about me</a></li>
-                    <li class="current"><a href="projects.html">projects & publications</a></li>
-                    <li><a href="blog_cs.html">blog (CS)</a></li>
-                    <li><a href="blog_personal.html">blog (personal)</a></li>
+                    <li class="current"><a href="index.html">home</a></li>
+                    <li><a href="about.html">experience</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="publications.html">publication</a></li>
+                    <!-- <li><a href="blog_cs.html">blog (CS)</a></li> -->
+                    <!-- <li><a href="blog_personal.html">blog (personal)</a></li> -->
+                    <li><a href="blog.html">blog</a></li>
                 </ul>
             </nav>
         </header>
         <div id="site_content">
-            <div>
-                <div style="padding: 15px;">
-                  <h1>Current Project</h1>
-                    <h2>Formal verification on pKVM</h2>
-
-                    <div class="xyz">
-                        <ul style="list-style-type:disc">
-                          <li>pKVM is a hypervisor for Android</li>
-                          <li>Develop an end-to-end formal verification tool
-                            for pKVM and verify it!</li>
-                        </ul>
-                    </div>
-                  <h1>Previous Projects</h1>
-                    <h2>ADVERT: Atomic Distributed System Verification
-                      Toolkit</h2>
-                    <div class="xyz">
-                        <ul style="list-style-type:disc">
-                            <li>Build a verification template for quorum-based distributed systems</li>
-                            <li>Provide compositions of multiple distributed systems to form a bigger system</li>
-                            <li>Provide template-driven protocol safety proof (linearizability) for developers to enable them not to consider distributed features while writing specifications and programs in their development</li>
-                        </ul>
-                    </div>
-                    <h2>CertiKOS</h2>
-                    <div class="xyz">
-                        <ul style="list-style-type:disc;">
-                            <li>Present a novel compositional approach for building certified concurrent OS kernels and develop a practical concurrent OS kernel and verify its (contextual) functional correctness in Coq</li>
-                            <ul style="list-style-type:disc;">
-                                <li>It is written in 6500 lines of C and x86 assembly</li>
-                                <li>It is the first proof of functional correctness of a complete, general-purpose concurrent OS kernel with fine-grained locking</li>
-                                <li>It runs on stock x86 multicore machines</li>
-                            </ul>
-                            <li>Work on extending CertiKOS in many ways:</li>
-                            <ul style="list-style-type:disc;">
-                                <li>CertiKOS ARM Hypervisor: verifying functional correctness and security property (integrity and confidentiality of CertiKOS hypervisor on ARM platform</li>
-                                <li>Concurrent Linking Framework: providing a user-friendly framework to link multiple separate instances in concurrent program verification and link CeriKOS proofs using this framework as an example</li>
-                                <li>User Program Linking: providing a framework to link separately developed and verified user programs with CertiKOS</li>
-                            </ul>
-                        </ul>
-                    </div>
+            <div style="padding: 15px;">
+                <h1>Research Interest</h1>
+                <div class="xyz">
+                    <ul style="list-style-type:disc">
+                        <li>Programming language theory</li>
+                        <li>System software (operating systems, hypervisor,
+                            distributed systems, and blockchain)</li>
+                        <li>Formal verification</li>
+                        <li>Interactive theorem proving</li>
+                        <li>Concurrency</li>
+                        <li>Software security</li>
+                        <li>Machine learning optimization (Quantization)</li>
+                    </ul>
                 </div>
-            </div>
 
-            <div id="section1 ">
-                <div style="padding: 15px; ">
-                  <h1>Publications</h1>
 
-                  <h2>Thesis</h2>
-                    <div class="xyz">
-                        <b>Jieung Kim</b> (Yale University), <u>Modular and Compositional Development of Certified Concurrent Software Systems</u> (Ph.D. Thesis)
-                    </div>
-                    <br/>
-                    <div class="xyz">
-                        <b>Jieung Kim</b> (KAIST), <u>Proving FFMM Type Safety Using Coq</u> (MS Thesis)
-                    </div>
-                    <br/>
+                <h1>Formal Verification Projects</h1>
+                Most of my projects are related to formal verification, "<i>the act of proving or disproving the correctness of intended algorithms underlying a system with respect to a certain formal specification or property, using formal methods of mathematics</i> (from Wikipedia)".
+                Formal verification requires multiple components 1) a target program, 2) a mathematical specification for the program, 3) a mathematical relation to define the consistency between the program and the specification,
+                and proofs and a proof checker to actually show the correctness of the program and the specification. The below figure shows how key components in formal verification are related to others.<br /><br /> 
+                <center>
+                <figure>
+                    <img src="files/projects/formal_verification.png" alt="Trulli" style="width:65%">
+                    <!-- <figcaption>Fig.1 - Formal verification</figcaption> -->
+                </figure> 
+                </center>
+                <br />
+                Formal verification has several granularities, and it is the most strongest way to guarantee the correctness of the software (by showing the target software faithfully implements the rigorous specification).
+                However, it is not practical due to the high verification cost. My main works are related to reducing the cost while fully facilitating the power of formal verification. To do that, we usually use modular way
+                to separately verify multiple components in the software and compose those proofs together to show the entire correctness as the below figure shows.<br /><br /> 
+                <center>
+                    <figure>
+                        <img src="files/projects/compositional_formal_verification.png" alt="Trulli" style="width:65%">
+                        <!-- <figcaption>Fig.1 - Formal verification</figcaption> -->
+                    </figure> 
+                </center>
+                <br /> 
+ 
+                <h2>Formal verification on pKVM</h2>
+                pKVM is a hypervisor for Android to increase security in the future Android ecosystem. Please look at the below video to learn more about pKVM.<br /><br />
+ 
+                <center>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/wY-u6n75iXc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </center>                
+                <br />
+                We are developing end-to-end formal verification tools for pKVM and verify it! It includes the following things. 
+                <ul style="list-style-type:disc">
+                    <li>A language for writing formal specifications and tests for specifications.</li>
+                    <li>Novel composition theory and tool for formal verification.</li>
+                    <li>Automated tools to reduce the human cost in the formal verification.</li>
+                    <li>Formally defined hardware specifications.</li>
+                    <li>Translation validations for the C code compilation.</li>
+                </ul>
+  
+                <h2>ADO: Atomic Distributed Objects</h2>
+                A distributed service platform is a set of components unified by a management control plane that implements standard network services.
+                Building a distributed service platform usually requires multiple local machines, a network to connect those local machines to others, 
+                distributed systems to provide the unified abstractions of those multiple local machines, and the application that we hope to provide
+                for users (See the below figure). <br /><br />
+                <center>
+                    <figure>
+                        <img src="files/projects/distributed_systems.png" alt="Trulli" style="width:65%">
+                        <!-- <figcaption>Fig.1 - Formal verification</figcaption> -->
+                    </figure> 
+                </center>
+                <br />                 
+                The low-level parts of distributed systems are usually built with distributed consensus protocols that guarantees the consistency in a certain level.
+                Among them, there are several strongly consistent protocols such as Paxos, Raft, and Chain-replication. They provides the strong guarantee that
+                users view the same state regardless of any kinds of network and local machine errors in distributed systems.
+  
+                However, due to the complexity of those protocols, application builders usually use State Machine Replication (SMR) as a abstraction of those protocols
+                that are used for the same purpose. However, SMR sacrifices possessing all possible behaviors (i.e., partial failures) of those protocols in the model.
+                Therefore, we work on providing a proper but simple program abstraction for multiple distributed protocols and systems with formal verification.<br /><br />
+                <center>
+                    <figure>
+                        <img src="files/projects/ADO.png" alt="Trulli" style="width:30%">
+                        <!-- <figcaption>Fig.1 - Formal verification</figcaption> -->
+                    </figure> 
+                </center><br />
+                Also, We provide template-driven protocol safety proof
+                (linearizability) for developers to enable them
+                not to consider distributed features while
+                writing specifications and programs in their
+                development.  <br />   <br />        
 
-                    <h2>Journal</h2>
-                    <div class="xyz">
-                        Ronghui Gu, Zhong Shao, Hao Chen, <b>Jieung Kim</b>, Jeremie Koenig, Xiongnan (Newman) Wu, Vilhelm Sjoberg, and David Costanzo, <u>Building Certified Concurrent OS Kernels</u>,
-                        <i>Communications of the ACM, 62(10)</i>, pages 89-99, October 2019.
-                    </div>
-                    <br/>
-                    <h2>Conference</h2>
-                    <div class="xyz">
-                      Wolf Honore<b>*</b>, <b>Jieung Kim*</b>, Ji-Yong Shin, and Zhong Shao ,
-                        <u>Much ADO about Failures: A Fault-Aware Model for
-                          Compositional Verification of Strongly Consistent
-                          Distributed Systems</u>
-                        <i>Proceedings of 2021 ACM SIGPLAN International
-                          Conference on Object-Oriented Programming, Systems,
-                          Languages, and Applications (OOPSLA'21)</i>, October
-                        2021. (<b>*: both equally contribute to this work</b>)
-                    </div>
-                    <br/>
-                    <div class="xyz">
-                        Ji-Yong Shin, <b>Jieung Kim</b>, Wolf Honore, Hernan Vanzetto, Srihari Radhakrishnan, Mahesh Balakrishnan, and Zhong Shao ,
-                        <u>WormSpace: A Modular Foundation for Simple, Verifiable Distributed Systems</u>,
-                        <i>ACM Symposium on Cloud Computing 2019 (SoCC ’19)</i>, November 2019.
-                    </div>
-                    <br/>
-                    <div class="xyz">
-                        Ronghui Gu, Zhong Shao, <b>Jieung Kim</b>, Xiongnan (Newman) Wu, Jeremie Koenig, Vilhelm Sjoberg, Hao Chen, David Costanzo, and Tahina Ramananandro,
-                        <u>Certified Concurrent Abstraction Layers</u>,
-                        <i>Proceedings of 2018 ACM SIGPLAN Conference on Programming Language Design and Implementation</i>, June 2018.
-                    </div>
-                    <br/>
-                    <div class="xyz">
-                        <b>Jieung Kim</b>, Vilhelm Sjoberg, Ronghui Gu, and Zhong Shao,
-                        <u>Safety and Liveness of MCS Lock—Layer by Layer</u>,
-                        <i>Proceedings of the 15th Asian Symposium on Programming Languages and Systems</i>, November 2017.
-                    </div>
-                    <br/>
-                    <div class="xyz">
-                        Ronghui Gu, Zhong Shao, Hao Chen, Xiongnan (Newman) Wu, <b>Jieung Kim</b>, Vilhelm Sjoberg, and David Costanzo,
-                        <u>CertiKOS: An Extensible Architecture for Building Certified Concurrent OS Kernels</u>,
-                        <i>12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16)</i>, November 2016.
-                    </div>
-                    <br/>
-                    <div class="xyz">
-                        <b>Jieung Kim</b>, Sukyoung Ryu, Victor Luchangco, and Guy L. Steele Jr.,
-                        <u>Fine-Grained Function Visibility for Multiple Dispatch with Multiple Inheritance</u>,
-                        <i>Proceedings of the 11th Asian Symposium on Programming Languages and Systems</i>, December 2013.
-                    </div>
-                    <br/>
-                    <div class="xyz">
-                        <b>Jieung Kim</b> and Sukyoung Ryu,
-                        <u>Coq Mechanization of Featherweight Fortress with Multiple Dispatch and Multiple Inheritance</u>,
-                        <i>The First International Conference on Certified Programs and Proofs</i>, December 2011.
-                    </div>
-                    <br/>
+                <h2>CertiKOS</h2>
+                CertiKOS is an extensible architecture for building certified concurrent OS kernels.
+                Complete formal verification of a non-trivial concurrent OS kernel is widely considered a grand challenge. 
+                We present a novel compositional approach for building certified concurrent OS kernels. 
+                CertiKOS is not a fully practical operating system, but contains multiple services that can be used with restricted purposes. 
+                The below figure shows how we build CertiKOS with 6500 lines of C and x86 assembly.<br /><br />
+                <center>
+                    <figure>
+                        <img src="files/projects/CertiKOSArchitecture.png" alt="Trulli" style="width:65%">
+                        <!-- <figcaption>Fig.1 - Formal verification</figcaption> -->
+                    </figure> 
+                </center><br />
 
-                    <h2>Poster</h2>
-                    <div class="xyz">
-                        Ronghui Gu, Zhong Shao, <b>Jieung Kim</b>, Xiongnan (Newman) Wu, Jeremie Koenig, Vilhelm Sjoberg, Hao Chen, David Costanzo, and Tahina Ramananandro,
-                        <u>Certified Concurrent Abstraction Layers</u>,
-                        <i>Proceedings of 2018 ACM SIGPLAN Conference on Programming Language Design and Implementation</i>, June 2018.
-                    </div>
-                    <br/>
+                With the kernel, the main purpose of our formal verification is showing that all user programs running on top of our formal specification
+                faithfully reflects the all behaviors of running the same user programs on top of the kernel implementation (see below).<br /><br /> 
+                <center>
+                    <figure>
+                        <img src="files/projects/CertiKOS_top_level_theorem.png" alt="Trulli" style="width:65%">
+                        <!-- <figcaption>Fig.1 - Formal verification</figcaption> -->
+                    </figure> 
+                </center><br />
+                To show that, we aggressively decompose the kernel into multiple layers (65 layers) and granulary provide abstractions of each layer. 
+                The below figure shows the overall module hierarchy of CertiKOS.<br /><br /> 
+                <center>
+                    <figure>
+                        <img src="files/projects/CertiKOSLayers.png" alt="Trulli" style="width:65%">
+                        <!-- <figcaption>Fig.1 - Formal verification</figcaption> -->
+                    </figure> 
+                </center><br />
+                
+                Each model contains multiple layers in it to ease the verification process. For example, MCS Lock formal verification
+                consists of six layers to provide the abstracted lock specification that can also be used as a specification of other lock algorithms and implementations (e.g., ticket lock).<br /><br /> 
+                <center>
+                    <figure>
+                        <img src="files/projects/MCSLockLayers.png" alt="Trulli" style="width:65%">
+                        <!-- <figcaption>Fig.1 - Formal verification</figcaption> -->
+                    </figure> 
+                </center><br />
+                We are working on improving the methodologies that we have used in CertiKOS and extending CertiKOS. Possible extensions are as follows.
+                <ul style="list-style-type:disc;">
+                    <li>CertiKOS ARM Hypervisor: verifying
+                        functional correctness and security property
+                        (integrity and confidentiality of CertiKOS
+                        hypervisor on ARM platform</li>
+                    <li>Concurrent Linking Framework: providing a
+                        user-friendly framework to link multiple
+                        separate instances in concurrent program
+                        verification and link CeriKOS proofs using
+                        this framework as an example</li>
+                    <li>User Program Linking: providing a framework
+                        to link separately developed and verified
+                        user programs with CertiKOS</li>
+                </ul>
 
-                    <h2>Technical Report</h2>
-                    <div class="xyz">
-                        Ji-Yong Shin, <b>Jieung Kim</b>, Wolf Honore, Hernan Vanzetto, Srihari Radhakrishnan, Mahesh Balakrishnan, and Zhong Shao,
-                        <u>Write-Once-Registers: A Modular Foundation for Simple, Verifiable Distributed Systems</u>,
-                        <i>Technical report - YALEU/DCS/TR1544</i>, December 2018
-                    </div>
-                    <br/>
-                    <div class="xyz">
-                        <b>Jieung Kim</b> and Sukyoung Ryu, <u>Coq Mechanization of Featherweight Basic Core Fortress for Type Soundness</u>,
-                        <i>Technical Report (ROSAEC-2011-011)</i>, May 2011.
-                    </div>
-                    <br/>
+                <h1>Other Projects</h1>
 
-                </div>
-                <br/>
-            </div>
+                <h2>Quantization Benchmarks</h2>
+                <!--
+                <center>
+                    <figure>
+                        <img src="files/projects/quantizaiton.png" alt="Trulli" style="width:65%">
+                    </figure> 
+                </center>
+                -->
+                Quantization is the process of mapping continuous infinite values to a smaller set of discrete finite values 
+                and it is one of the most prevelent optimization techniques for machine learning models. 
+                We are working on how to measure the effect of multiple quantization options. <br /><br />
 
-            <div id="section1 ">
-                <div style="padding: 15px; ">
-                  <h1>Talks & Lectures</h1>
-                </div>
+                <h2>Smart Contract synthesis</h2>
+                A smart contract is a self-executing contract with the terms of the agreement between buyer and seller being directly written into lines of code.
+                We are working on building a tool to automatically synthesize smart contracts for specific domains.<br /><br />
+                
             </div>
         </div>
         <footer>
-            <p><a href="index.html ">home</a> | <a href="about.html ">about me</a> | <a href="projects.html ">projects & publications</a> | <a href="blog_cs.html ">blog (CS)</a> | <a href="blog_personal.html ">blog (personal)</a></p>
-            <p>&copy; 2021 Jieung Kim. All Rights Reserved. | <a href="http://www.css3templates.co.uk ">design from css3templates.co.uk</a></p>
+            <p><a href="index.html">home</a> | <a
+                    href="about.html">experience</a> | <a
+                    href="projects.html">projects</a> | <a
+                    href="publications.html">publications</a> | <a
+                    href="blog.html">blog</a></p>
+            <!-- <p><a href="index.html">home</a> | <a href="about.html">about me</a> | <a href="projects.html">projects & publications</a> | <a href="blog_cs.html">blog (CS)</a> | <a href="blog_personal.html">blog (personal)</a></p> -->
+            <p>&copy; 2021 Jieung Kim. All Rights Reserved. | <a
+                    href="http://www.css3templates.co.uk ">design from
+                    css3templates.co.uk</a></p>
         </footer>
     </div>
     <!-- javascript at the bottom for fast page loading -->
