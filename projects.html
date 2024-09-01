@@ -1,369 +1,446 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Jieung Kim</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Free Website Template" name="keywords">
+        <meta content="Free Website Template" name="description">
 
-<head>
-    <title>Jieung Kim</title>
-    <meta name="description" content="Jieung Kim's webpage" />
-    <meta name="keywords" content="Personal, Computer Science, Research" />
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- modernizr enables HTML5 elements and feature detects -->
-    <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
-</head>
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
 
 <body>
-    <div id="main">
-        <header>
-            <div id="logo">
-                <h1><a href="#">Jieung Kim</a></h1>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">                   
+                <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" src="img/profile.jpg" alt="Image">
+                <h1 class="font-weight-bold">Jieung Kim</h1>
+                <p class="mb-4">
+                    I am Jieung Kim,</br>
+                    an <b>assistant professor</b> in the <b>Department of Computer Science</b>, <b>College of Computing</b></br> 
+                    at <b>Yonsei University</b>, 
+                    South Korea. </br>
+                    I am interested in designing secure-guaranteed systems using multiple formal techniques.
+                </p>
+                <div class="d-flex justify-content-center mb-5">
+                    <a class="btn btn-outline-primary mr-2" href="https://www.facebook.com/jieung.gabe.kim/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary mr-2" href="https://www.linkedin.com/in/jieungkim/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <a href="https://docs.google.com/document/d/1AX3h8Ws3Rb5N-RKGnJyiLlyXVIiErwRFxwdGfQD0ruk/edit?usp=sharing">
+                    <u>Curriculum Vitae</u></a> 
+                    <a href="https://scholar.google.com/citations?hl=ko&user=HbBHX4IAAAAJ"><u>Google Scholar</u></a> <a
+                    href="https://dblp.org/pid/64/10475.html"><u>DBLP</u></a>
             </div>
-            <nav>
-                <ul class="lavaLampWithImage" id="lava_menu">
-                    <li class="current"><a href="index.html">home</a></li>
-                    <li><a href="about.html">experience</a></li>
-                    <li><a href="projects.html">projects</a></li>
-                    <li><a href="publications.html">publication</a></li>
-                    <li><a href="blog.html">blog</a></li>
-                    <li><a href="https://sites.google.com/view/lesn-lab">LeSN
-                            Lab.</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div id="site_content">
-            <div style="padding: 15px;">
-                <h1>Grant</h1>
-                <div class="xyz">
-                    <ul style="list-style-type:disc">
-                        <li><b>Formal approaches to achieve accuracy of
+            <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
+                <i class="fas fa-2x fa-angle-double-right text-primary"></i>
+            </div>
+        </div>
+        <div class="content">
+            <!-- Navbar Start -->
+            <div class="container p-0">
+                <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
+                    <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav m-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu">
+                                    <a href="projects.html" class="dropdown-item">Projects</a>
+                                    <a href="publication.html" class="dropdown-item">Publication</a>
+                                    <a href="blog.html" class="dropdown-item">Blog</a>
+                                </div>
+                            </div>
+                            <a href="https://sites.google.com/view/fcai-lab" class="nav-item nav-link">FCAI Lab.</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Navbar End -->
+
+                <!-- Carousel Start -->
+                <div class="container p-0">
+                    <div id="blog-carousel" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="w-100" src="img/background.png" alt="Image">
+                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                    <h2 class="mb-3 text-white font-weight-bold">Welcome to Jieung Kim's Page</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel End -->
+
+            <!-- Work Experience Start -->
+            <div class="container bg-white pt-5">
+                <div class="row px-3 pb-5">
+                    <div class="col-md-12">
+                        <h2 class="mb-4 font-weight-bold">Grant</h2>
+                        <p class="m-0">
+                            <li><b>Formal approaches to achieve accuracy of
                                 quantized neural network</b>, <u>Korea Model
                                 Optimization Program, Google Korea</u>,
                             2023.09.22~2024.09.21</li>
-                        <li><b>A Fundamental Technology for Modular Neural
+                            <li><b>A Fundamental Technology for Modular Neural
                                 Network Verification (신경망 분해/통합 검증을 위한 원천 기술
                                 연구)</b>, <u>삼성미래기술육성재단</u>,
                             2023.12.01~2026.11.30</li>
-                    </ul>
+                        </p>
+                    </div>              
+
+                    <div class="col-md-12">
+                        <h2 class="mb-4 font-weight-bold">Research Interest</h2>
+                        <p class="m-0">
+                            <li>Reliability in system software (시스템 소프트웨어 신뢰성 -
+                                distributed system, blockchain, hypervisor,
+                                operating systems, computational storage)</li>
+                            <li>Reliability in neural network (신경망 신뢰성 - framework &
+                                model reliability)</li>
+                            <li>Formal verification (정형 검증)</li>
+                            <li>Fuzzing (퍼징)</li>
+                            <li>Programming language design & theory (프로그래밍 언어 설계 및
+                                이론)</li>
+                            <li>Formal verification automation (정형 검증 자동화)</li>
+                            <li>Formal verification theories and tools (정형 검증 이론 및
+                                도구)</li>
+    
+                        </p>
+                    </div>              
+
+
+                    <div class="col-md-12">
+                        <h2 class="mb-4 font-weight-bold">Formal Verification Projects</h2>
+                        <p class="m-0">
+                            Most of my projects are related to formal verification, "<i>the
+                                act of proving or disproving the correctness of intended
+                                algorithms underlying a system with respect to a certain
+                                formal specification or property, using formal methods
+                                of
+                                mathematics</i> (from Wikipedia)".
+                            Formal verification requires multiple components 1) a target
+                            program, 2) a mathematical specification for the program, 3)
+                            a
+                            mathematical relation to define the consistency between the
+                            program and the specification,
+                            and proofs and a proof checker to actually show the
+                            correctness
+                            of the program and the specification. The below figure shows
+                            how
+                            key components in formal verification are related to
+                            others.<br /><br />
+                            <center>
+                                <figure>
+                                    <img src="files/projects/formal_verification.png"
+                                        alt="Trulli" style="width:85%">
+                                </figure>
+                            </center>
+                            <br />
+                            Formal verification has several granularities, and it is the
+                            most strongest way to guarantee the correctness of the
+                            software
+                            (by showing the target software faithfully implements the
+                            rigorous specification).
+                            However, it is not practical due to the high verification
+                            cost.
+                            My main works are related to reducing the cost while fully
+                            facilitating the power of formal verification. To do that,
+                            we
+                            usually use modular way
+                            to separately verify multiple components in the software and
+                            compose those proofs together to show the entire correctness
+                            as
+                            the below figure shows.<br /><br />
+                            <center>
+                                <figure>
+                                    <img src="files/projects/compositional_formal_verification.png"
+                                        alt="Trulli" style="width:85%">
+                                </figure>
+                            </center>
+                            <br />
+            
+                        </p>
+                    </div>       
+                    
+                    <div class="col-md-12">
+                        <h2 class="mb-4 font-weight-bold">Machine Learning Model Correctness Verification</h2>
+                        <p class="m-0">
+                            The Software 2.0 era has seen a significant increase in neural
+                            network-based software and services, raising concerns about
+                            potential costs related to neural network failures. Formal
+                            verification stands out as the singular approach to ultimately
+                            guarantee correctness, but challenges persist in the application
+                            of formal verification to this domain. Even state-of-the-art
+                            techniques for neural network verification face limitations in
+                            two crucial verification components. Current methodologies do
+                            not fully illustrate the complete behavior of neural networks as
+                            formal specifications; instead, these techniques primarily focus
+                            on local robustness. Furthermore, they continue to struggle with
+                            the efficient management of large-scale models and face
+                            challenges in achieving optimal reusability.
+                            <br /> <br />
+                            To address the stated challenges, our objective is to develop
+                            the foundational theory and methodology for neural network
+                            verification. Drawing inspiration from concepts in the formal
+                            verification of conventional software and considering the
+                            distinctive characteristics of neural network domains, we aim to
+                            create a methodology that precisely articulates multiple desired
+                            properties of target networks in a mathematically rigorous
+                            manner, without restricting the types of these properties.
+                            Furthermore, we put forward a modular verification approach
+                            based on both the stated specifications and the target network
+                            structure. We are confident that our endeavors will boost the
+                            reliability of neural networks, thereby opening pathways for
+                            building critical network-related applications and societal
+                            advancements.
+    
+                        </p>
+                    </div>     
+                    
+                    <div class="col-md-12">
+                        <h2 class="mb-4 font-weight-bold">ADO: Atomic Distributed Objects - Distributed System
+                            Verification</h2>
+                        <p class="m-0">
+                            The low-level parts of distributed systems are usually built
+                            with distributed consensus protocols that guarantees the
+                            consistency in a certain level.
+                            Among them, there are several strongly consistent protocols
+                            such
+                            as Paxos, Raft, and Chain-replication. They provides the
+                            strong
+                            guarantee that
+                            users view the same state regardless of any kinds of network
+                            and
+                            local machine errors in distributed systems.
+            
+                            However, due to the complexity of those protocols,
+                            application
+                            builders usually use State Machine Replication (SMR) as a
+                            abstraction of those protocols
+                            that are used for the same purpose. However, SMR sacrifices
+                            possessing all possible behaviors (i.e., partial failures)
+                            of
+                            those protocols in the model.
+                            Therefore, we work on providing a proper but simple program
+                            abstraction for multiple distributed protocols and systems
+                            with
+                            formal verification.<br /><br />
+                            <center>
+                                <figure>
+                                    <img src="files/projects/ADO.png" alt="Trulli"
+                                        style="width:50%">
+                                </figure>
+                            </center><br />
+                            Also, We provide template-driven protocol safety proof
+                            (linearizability) for developers to enable them
+                            not to consider distributed features while
+                            writing specifications and programs in their
+                            development.
+    
+                        </p>
+                    </div>               
+                    
+                    
+                        <div class="col-md-12">
+                            <h2 class="mb-4 font-weight-bold">Formal verification on pKVM</h2>
+                            <p class="m-0">
+                                pKVM is a hypervisor for Android to increase security in the
+                                future Android ecosystem. Please look at the below video to
+                                learn more about pKVM.<br /><br />
+                
+                                <center>
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/wY-u6n75iXc"
+                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                                            encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </center>
+                                <br />
+                                We are developing end-to-end formal verification tools for
+                                pKVM
+                                and verify it! It includes the following things.
+                                <ul style="list-style-type:disc">
+                                    <li>A language for writing formal specifications and
+                                        tests
+                                        for specifications.</li>
+                                    <li>Novel composition theory and tool for formal
+                                        verification.</li>
+                                    <li>Automated tools to reduce the human cost in the
+                                        formal
+                                        verification.</li>
+                                    <li>Formally defined hardware specifications.</li>
+                                    <li>Translation validations for the C code compilation.</li>
+                                </ul>
+            
+                            </p>
+                        </div>      
+
+                            <div class="col-md-12">
+                                <h2 class="mb-4 font-weight-bold">CertiKOS</h2>
+                                <p class="m-0">
+                                    CertiKOS is an extensible architecture for building
+                                    certified
+                                    concurrent OS kernels.
+                                    Complete formal verification of a non-trivial concurrent OS
+                                    kernel is widely considered a grand challenge.
+                                    We present a novel compositional approach for building
+                                    certified
+                                    concurrent OS kernels.
+                                    CertiKOS is not a fully practical operating system, but
+                                    contains
+                                    multiple services that can be used with restricted purposes.
+                                    The below figure shows how we build CertiKOS with 6500 lines
+                                    of
+                                    C and x86 assembly.<br /><br />
+                                    <center>
+                                        <figure>
+                                            <img src="files/projects/CertiKOSArchitecture.png"
+                                                alt="Trulli" style="width:65%">
+                                        </figure>
+                                    </center><br />
+                    
+                                    With the kernel, the main purpose of our formal verification
+                                    is
+                                    showing that all user programs running on top of our formal
+                                    specification
+                                    faithfully reflects the all behaviors of running the same
+                                    user
+                                    programs on top of the kernel implementation (see
+                                    below).<br /><br />
+                                    <center>
+                                        <figure>
+                                            <img src="files/projects/CertiKOS_top_level_theorem.png"
+                                                alt="Trulli" style="width:85%">
+                                        </figure>
+                                    </center><br />
+                                    To show that, we aggressively decompose the kernel into
+                                    multiple
+                                    layers (65 layers) and granulary provide abstractions of
+                                    each
+                                    layer.
+                                    The below figure shows the overall module hierarchy of
+                                    CertiKOS.<br /><br />
+                                    <center>
+                                        <figure>
+                                            <img src="files/projects/CertiKOSLayers.png"
+                                                alt="Trulli" style="width:85%">
+                                        </figure>
+                                    </center><br />
+                    
+                                    Each model contains multiple layers in it to ease the
+                                    verification process. For example, MCS Lock formal
+                                    verification
+                                    consists of six layers to provide the abstracted lock
+                                    specification that can also be used as a specification of
+                                    other
+                                    lock algorithms and implementations (e.g., ticket
+                                    lock).<br /><br />
+                                    <center>
+                                        <figure>
+                                            <img src="files/projects/MCSLockLayers.png" alt="Trulli"
+                                                style="width:85%">
+                                        </figure>
+                                    </center><br />
+                                    We are working on improving the methodologies that we have
+                                    used
+                                    in CertiKOS and extending CertiKOS. Possible extensions are
+                                    as
+                                    follows.
+                                    <ul style="list-style-type:disc;">
+                                        <li>CertiKOS ARM Hypervisor: verifying
+                                            functional correctness and security property
+                                            (integrity and confidentiality of CertiKOS
+                                            hypervisor on ARM platform</li>
+                                        <li>Concurrent Linking Framework: providing a
+                                            user-friendly framework to link multiple
+                                            separate instances in concurrent program
+                                            verification and link CeriKOS proofs using
+                                            this framework as an example</li>
+                                        <li>User Program Linking: providing a framework
+                                            to link separately developed and verified
+                                            user programs with CertiKOS</li>
+                                    </ul>
+                
+                
+                                </p>
+                            </div>      
+
+                            <div class="col-md-12">
+                                <h2 class="mb-4 font-weight-bold">Other Projects</h2>
+                                <p class="m-0">
+                                    <h5>Quantization Benchmarks</h5>
+                                    Quantization is the process of mapping continuous infinite
+                                    values to a smaller set of discrete finite values
+                                    and it is one of the most prevelent optimization techniques
+                                    for
+                                    machine learning models.
+                                    We are working on how to measure the effect of multiple
+                                    quantization options. 
+
+                                    <h5>Smart Contract Synthesis</h5>
+                                    A smart contract is a self-executing contract with the terms
+                                    of
+                                    the agreement between buyer and seller being directly
+                                    written
+                                    into lines of code.
+                                    We are working on building a tool to automatically
+                                    synthesize
+                                    smart contracts for specific domains.                
+                                </p>
+                            </div>      
+
+
+
+
+
                 </div>
-
-
-                <h1>Research Interest</h1>
-                <div class="xyz">
-                    <ul style="list-style-type:disc">
-                        <li>Reliability in system software (시스템 소프트웨어 신뢰성 -
-                            distributed system, blockchain, hypervisor,
-                            operating systems, computational storage)</li>
-                        <li>Reliability in neural network (신경망 신뢰성 - framework &
-                            model reliability)</li>
-                        <li>Formal verification (정형 검증)</li>
-                        <li>Fuzzing (퍼징)</li>
-                        <li>Programming language design & theory (프로그래밍 언어 설계 및
-                            이론)</li>
-                        <li>Formal verification automation (정형 검증 자동화)</li>
-                        <li>Formal verification theories and tools (정형 검증 이론 및
-                            도구)</li>
-                    </ul>
-                </div>
-
-                <h1>Formal Verification Projects</h1>
-                Most of my projects are related to formal verification, "<i>the
-                    act of proving or disproving the correctness of intended
-                    algorithms underlying a system with respect to a certain
-                    formal specification or property, using formal methods
-                    of
-                    mathematics</i> (from Wikipedia)".
-                Formal verification requires multiple components 1) a target
-                program, 2) a mathematical specification for the program, 3)
-                a
-                mathematical relation to define the consistency between the
-                program and the specification,
-                and proofs and a proof checker to actually show the
-                correctness
-                of the program and the specification. The below figure shows
-                how
-                key components in formal verification are related to
-                others.<br /><br />
-                <center>
-                    <figure>
-                        <img src="files/projects/formal_verification.png"
-                            alt="Trulli" style="width:65%">
-                    </figure>
-                </center>
-                <br />
-                Formal verification has several granularities, and it is the
-                most strongest way to guarantee the correctness of the
-                software
-                (by showing the target software faithfully implements the
-                rigorous specification).
-                However, it is not practical due to the high verification
-                cost.
-                My main works are related to reducing the cost while fully
-                facilitating the power of formal verification. To do that,
-                we
-                usually use modular way
-                to separately verify multiple components in the software and
-                compose those proofs together to show the entire correctness
-                as
-                the below figure shows.<br /><br />
-                <center>
-                    <figure>
-                        <img src="files/projects/compositional_formal_verification.png"
-                            alt="Trulli" style="width:65%">
-                    </figure>
-                </center>
-                <br />
-
-                <h2>Machine Learning Model Correctness Verification</h2>
-                The Software 2.0 era has seen a significant increase in neural
-                network-based software and services, raising concerns about
-                potential costs related to neural network failures. Formal
-                verification stands out as the singular approach to ultimately
-                guarantee correctness, but challenges persist in the application
-                of formal verification to this domain. Even state-of-the-art
-                techniques for neural network verification face limitations in
-                two crucial verification components. Current methodologies do
-                not fully illustrate the complete behavior of neural networks as
-                formal specifications; instead, these techniques primarily focus
-                on local robustness. Furthermore, they continue to struggle with
-                the efficient management of large-scale models and face
-                challenges in achieving optimal reusability.
-                <br /> <br />
-                To address the stated challenges, our objective is to develop
-                the foundational theory and methodology for neural network
-                verification. Drawing inspiration from concepts in the formal
-                verification of conventional software and considering the
-                distinctive characteristics of neural network domains, we aim to
-                create a methodology that precisely articulates multiple desired
-                properties of target networks in a mathematically rigorous
-                manner, without restricting the types of these properties.
-                Furthermore, we put forward a modular verification approach
-                based on both the stated specifications and the target network
-                structure. We are confident that our endeavors will boost the
-                reliability of neural networks, thereby opening pathways for
-                building critical network-related applications and societal
-                advancements.
-
-
-
-                <h2>ADO: Atomic Distributed Objects - Distributed System
-                    Verification</h2>
-                A distributed service platform is a set of components
-                unified by
-                a management control plane that implements standard network
-                services.
-                Building a distributed service platform usually requires
-                multiple local machines, a network to connect those local
-                machines to others,
-                distributed systems to provide the unified abstractions of
-                those
-                multiple local machines, and the application that we hope to
-                provide
-                for users (See the below figure). <br /><br />
-                <center>
-                    <figure>
-                        <img src="files/projects/distributed_systems.png"
-                            alt="Trulli" style="width:65%">
-                    </figure>
-                </center>
-                <br />
-                The low-level parts of distributed systems are usually built
-                with distributed consensus protocols that guarantees the
-                consistency in a certain level.
-                Among them, there are several strongly consistent protocols
-                such
-                as Paxos, Raft, and Chain-replication. They provides the
-                strong
-                guarantee that
-                users view the same state regardless of any kinds of network
-                and
-                local machine errors in distributed systems.
-
-                However, due to the complexity of those protocols,
-                application
-                builders usually use State Machine Replication (SMR) as a
-                abstraction of those protocols
-                that are used for the same purpose. However, SMR sacrifices
-                possessing all possible behaviors (i.e., partial failures)
-                of
-                those protocols in the model.
-                Therefore, we work on providing a proper but simple program
-                abstraction for multiple distributed protocols and systems
-                with
-                formal verification.<br /><br />
-                <center>
-                    <figure>
-                        <img src="files/projects/ADO.png" alt="Trulli"
-                            style="width:30%">
-                    </figure>
-                </center><br />
-                Also, We provide template-driven protocol safety proof
-                (linearizability) for developers to enable them
-                not to consider distributed features while
-                writing specifications and programs in their
-                development. <br /> <br />
-
-                <h2>Formal verification on pKVM</h2>
-                pKVM is a hypervisor for Android to increase security in the
-                future Android ecosystem. Please look at the below video to
-                learn more about pKVM.<br /><br />
-
-                <center>
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/wY-u6n75iXc"
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                            encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </center>
-                <br />
-                We are developing end-to-end formal verification tools for
-                pKVM
-                and verify it! It includes the following things.
-                <ul style="list-style-type:disc">
-                    <li>A language for writing formal specifications and
-                        tests
-                        for specifications.</li>
-                    <li>Novel composition theory and tool for formal
-                        verification.</li>
-                    <li>Automated tools to reduce the human cost in the
-                        formal
-                        verification.</li>
-                    <li>Formally defined hardware specifications.</li>
-                    <li>Translation validations for the C code compilation.</li>
-                </ul>
-
-                <h2>CertiKOS</h2>
-                CertiKOS is an extensible architecture for building
-                certified
-                concurrent OS kernels.
-                Complete formal verification of a non-trivial concurrent OS
-                kernel is widely considered a grand challenge.
-                We present a novel compositional approach for building
-                certified
-                concurrent OS kernels.
-                CertiKOS is not a fully practical operating system, but
-                contains
-                multiple services that can be used with restricted purposes.
-                The below figure shows how we build CertiKOS with 6500 lines
-                of
-                C and x86 assembly.<br /><br />
-                <center>
-                    <figure>
-                        <img src="files/projects/CertiKOSArchitecture.png"
-                            alt="Trulli" style="width:65%">
-                    </figure>
-                </center><br />
-
-                With the kernel, the main purpose of our formal verification
-                is
-                showing that all user programs running on top of our formal
-                specification
-                faithfully reflects the all behaviors of running the same
-                user
-                programs on top of the kernel implementation (see
-                below).<br /><br />
-                <center>
-                    <figure>
-                        <img src="files/projects/CertiKOS_top_level_theorem.png"
-                            alt="Trulli" style="width:65%">
-                    </figure>
-                </center><br />
-                To show that, we aggressively decompose the kernel into
-                multiple
-                layers (65 layers) and granulary provide abstractions of
-                each
-                layer.
-                The below figure shows the overall module hierarchy of
-                CertiKOS.<br /><br />
-                <center>
-                    <figure>
-                        <img src="files/projects/CertiKOSLayers.png"
-                            alt="Trulli" style="width:65%">
-                    </figure>
-                </center><br />
-
-                Each model contains multiple layers in it to ease the
-                verification process. For example, MCS Lock formal
-                verification
-                consists of six layers to provide the abstracted lock
-                specification that can also be used as a specification of
-                other
-                lock algorithms and implementations (e.g., ticket
-                lock).<br /><br />
-                <center>
-                    <figure>
-                        <img src="files/projects/MCSLockLayers.png" alt="Trulli"
-                            style="width:65%">
-                    </figure>
-                </center><br />
-                We are working on improving the methodologies that we have
-                used
-                in CertiKOS and extending CertiKOS. Possible extensions are
-                as
-                follows.
-                <ul style="list-style-type:disc;">
-                    <li>CertiKOS ARM Hypervisor: verifying
-                        functional correctness and security property
-                        (integrity and confidentiality of CertiKOS
-                        hypervisor on ARM platform</li>
-                    <li>Concurrent Linking Framework: providing a
-                        user-friendly framework to link multiple
-                        separate instances in concurrent program
-                        verification and link CeriKOS proofs using
-                        this framework as an example</li>
-                    <li>User Program Linking: providing a framework
-                        to link separately developed and verified
-                        user programs with CertiKOS</li>
-                </ul>
-
-                <h1>Other Projects</h1>
-
-                <h2>Quantization Benchmarks</h2>
-
-                Quantization is the process of mapping continuous infinite
-                values to a smaller set of discrete finite values
-                and it is one of the most prevelent optimization techniques
-                for
-                machine learning models.
-                We are working on how to measure the effect of multiple
-                quantization options. <br /><br />
-
-                <h2>Smart Contract Synthesis</h2>
-                A smart contract is a self-executing contract with the terms
-                of
-                the agreement between buyer and seller being directly
-                written
-                into lines of code.
-                We are working on building a tool to automatically
-                synthesize
-                smart contracts for specific domains.<br /><br />
-
             </div>
+
+
+
+
+
+            <!-- Footer Start -->
+            <div class="container py-4 bg-secondary text-center">
+                <p class="m-0 text-white">
+                    &copy; <a class="text-white font-weight-bold" href="https://jieung.kim">Jieung Kim</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+                </p>
+            </div>
+            <!-- Footer End -->
         </div>
-        <footer>
-            <p><a href="index.html">home</a> | <a
-                    href="about.html">experience</a> | <a
-                    href="projects.html">projects</a> | <a
-                    href="publications.html">publications</a> | <a
-                    href="blog.html">blog</a> | <a
-                    href="https://sites.google.com/view/lesn-lab">LeSN Lab.</a>
-            </p>
-            <p>&copy; 2021 Jieung Kim. All Rights Reserved. | <a
-                    href="http://www.css3templates.co.uk ">design from
-                    css3templates.co.uk</a></p>
-        </footer>
     </div>
-    <!-- javascript at the bottom for fast page loading -->
-    <script type="text/javascript " src="js/jquery.min.js "></script>
-    <script type="text/javascript " src="js/jquery.easing.min.js "></script>
-    <script type="text/javascript " src="js/jquery.lavalamp.min.js "></script>
-    <script type="text/javascript " src="js/image_fade.js "></script>
-    <script type="text/javascript ">
-        $(function() {
-            $("#lava_menu ").lavaLamp({
-                fx: "backout ",
-                speed: 700
-            });
-        });
-    </script>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
