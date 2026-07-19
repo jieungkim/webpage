@@ -686,6 +686,7 @@ p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
+    align-items: start;
 }
 
 .vcard {
@@ -703,6 +704,58 @@ p {
     border-color: var(--border-strong);
     transform: translateY(-3px);
     box-shadow: var(--shadow-md);
+}
+
+.vcard__illust {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 122px;
+    margin: -24px -24px 20px;
+    border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
+    background: linear-gradient(135deg, var(--accent-soft), color-mix(in srgb, var(--accent-soft) 45%, var(--bg-elev)));
+    border-bottom: 1px solid var(--border);
+    color: var(--accent);
+}
+
+.vcard__illust svg {
+    width: auto;
+    height: 86px;
+    max-width: 84%;
+}
+
+/* Diagram figures inside the vision section */
+.vision-fig {
+    margin: 22px 0 4px;
+    text-align: center;
+}
+
+.vision-fig img {
+    display: inline-block;
+    max-width: 100%;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    background: #ffffff;
+    padding: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+.vision-fig--tall img {
+    width: 100%;
+    max-width: 430px;
+}
+
+.vcard__fig {
+    margin: 16px 0 2px;
+    text-align: center;
+}
+
+.vcard__fig img {
+    max-width: 100%;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    background: #ffffff;
+    padding: 8px;
 }
 
 .vcard__q {

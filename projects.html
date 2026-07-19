@@ -44,16 +44,31 @@
         <section class="section reveal" style="border-top:none;">
             <h2 class="section-title">Research Vision</h2>
             <p class="vision__lead">
-                <b>Trustworthy Edge Collaboration Infrastructure for the Physical AI Era.</b>
-                In the Physical AI era, countless edge devices &mdash; humanoid robots, autonomous mobility, drones and
-                logistics robots, smart factories &mdash; are connected and act directly in the physical world. Edge
-                devices are no longer simple terminals: they <i>perceive, decide, and physically act</i>, learning and
-                executing on-site. For such a system to be <b>safe, trustworthy, and correct</b>, we must guarantee the
-                integrity of execution and provide safe recovery from faults. My lab
+                <b>Trustworthy Edge Collaboration Infrastructure for the Future Computing Environment.</b>
+                In the coming computing environment, countless edge devices &mdash; humanoid robots, autonomous
+                mobility, drones and logistics robots, smart factories, healthcare &mdash; are connected and act
+                directly in the physical world.
+                <span class="kr">&mdash; 로봇 · 모빌리티 · 인프라가 연결되어 물리 세계에서 함께 살아가는 미래 컴퓨팅 환경의 신뢰 가능한 Edge 협업 인프라를 연구합니다.</span>
+            </p>
+
+            <figure class="vision-fig">
+                <img src="files/projects/physical_ai_network.png" alt="Physical AI at the center, connecting robots, autonomous vehicles, drones, smart factories, smart homes, and healthcare devices">
+            </figure>
+
+            <p class="vision__lead">
+                In this shift, the <b>role of edge devices changes fundamentally</b>. They are no longer simple
+                terminals that relay information to a central server &mdash; they now <i>perceive, decide, and
+                physically act</i>, learning and executing directly in the field. For such a system to be
+                <b>safe, trustworthy, and correct</b>, we must guarantee the integrity of execution and provide safe
+                recovery from faults. My lab
                 (<a href="https://sites.google.com/view/fcai-lab" target="_blank" rel="noopener">FCAI Lab</a>) tackles
                 this <b>end-to-end</b> through four challenges.
-                <span class="kr">&mdash; 로봇 · 모빌리티 · 인프라가 연결되어 물리 세계에서 함께 살아가는 Physical AI 시대의 신뢰 가능한 Edge 협업 인프라를 연구합니다.</span>
+                <span class="kr">&mdash; 이 변화 속에서 Edge Device의 역할도 근본적으로 달라집니다: 정보를 전달하던 단순 단말을 넘어, 현장에서 스스로 지각·판단·행동하는 실행 주체가 됩니다.</span>
             </p>
+
+            <figure class="vision-fig vision-fig--tall">
+                <img src="files/projects/edge_role_change.png" alt="The changing role of edge devices — from an information aid and simple terminal to the agent that executes Physical AI">
+            </figure>
 
             <div class="vision__core">
                 <span class="vision__core-label">Core approach</span>
@@ -68,6 +83,18 @@
 
             <div class="vision__grid">
                 <article class="vcard">
+                    <div class="vcard__illust">
+                        <svg viewBox="0 0 200 100" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="16" cy="34" r="3.6" fill="currentColor" stroke="none"/>
+                            <circle cx="16" cy="66" r="3.6" fill="currentColor" stroke="none"/>
+                            <circle cx="34" cy="50" r="3.6" fill="currentColor" stroke="none"/>
+                            <path d="M24 34h34M24 66h34M42 50h16" opacity="0.45"/>
+                            <path d="M100 16l25 9v20c0 19-13 29-25 36-12-7-25-17-25-36V25z"/>
+                            <path d="M89 50l8 8 15-16"/>
+                            <path d="M141 50h33" opacity="0.45"/>
+                            <circle cx="184" cy="50" r="3.6" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </div>
                     <span class="vcard__q"><span class="vcard__qnum">1</span>&nbsp;&nbsp;&nbsp;&nbsp;CHALLENGE</span>
                     <h3 class="vcard__title">Safe Data Collection<span class="kr">안전한 데이터 수집</span></h3>
                     <p class="vcard__desc">
@@ -75,16 +102,27 @@
                         <i>before</i> it is absorbed into the model? Since poison, once learned, is hard to undo, clean
                         data must be preserved while poison is blocked pre-emptively.
                     </p>
-                    <div class="vcard__proj">
-                        Geometry-based pre-update poison screening &mdash;
-                        cross-checks incoming batches from five views (loss, gradient norm, Fisher-whitened gradient,
-                        Mahalanobis in gradient/feature space).
-                        <span class="stat">Detects poison at a <b>0.05%</b> rate with <b>100%</b> recall; suppresses
-                        attack success from <b>87&ndash;95%</b> to <b>~0%</b> with no accuracy loss.</span>
-                    </div>
+                    <figure class="vcard__fig">
+                        <img src="files/projects/data_poisoning.png" alt="Online learning continuously updates the model in real time, while data poisoning injects malicious data that leads to a wrong decision">
+                    </figure>
                 </article>
 
                 <article class="vcard">
+                    <div class="vcard__illust">
+                        <svg viewBox="0 0 200 100" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="24" y="28" width="48" height="44" rx="8"/>
+                            <path d="M48 28v44M24 50h48" opacity="0.4"/>
+                            <path d="M84 50h26"/>
+                            <path d="M102 43l8 7-8 7"/>
+                            <rect x="124" y="22" width="30" height="18" rx="5"/>
+                            <rect x="124" y="46" width="30" height="18" rx="5"/>
+                            <rect x="124" y="70" width="30" height="14" rx="5"/>
+                            <path d="M154 31h14M154 55h14M154 77h14" opacity="0.4"/>
+                            <circle cx="176" cy="31" r="3.4" fill="currentColor" stroke="none"/>
+                            <circle cx="176" cy="55" r="3.4" fill="currentColor" stroke="none"/>
+                            <circle cx="176" cy="77" r="3.4" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </div>
                     <span class="vcard__q"><span class="vcard__qnum">2</span>&nbsp;&nbsp;&nbsp;&nbsp;CHALLENGE</span>
                     <h3 class="vcard__title">Efficient Model Decomposition &amp; Deployment<span class="kr">효율적 모델 분할 · 배포</span></h3>
                     <p class="vcard__desc">
@@ -92,16 +130,21 @@
                         and deploy it while preserving the original model's decisions? We treat <i>decomposability</i>
                         as a property that demands both semantic preservation and structural separation.
                     </p>
-                    <div class="vcard__proj">
-                        Semantic-aware, verification-driven decomposition &mdash; a
-                        pipeline that decomposes into per-class components, generates decision-boundary samples
-                        (PGD + binary search), learns binary masks, and evaluates a decomposition &ldquo;contract.&rdquo;
-                        <span class="stat">Diagnoses causes and recommends retraining when the contract is unmet &mdash;
-                        an <b>&ldquo;undecomposable&rdquo;</b> verdict is itself a valid output.</span>
-                    </div>
                 </article>
 
                 <article class="vcard">
+                    <div class="vcard__illust">
+                        <svg viewBox="0 0 200 100" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="58" cy="26" r="10"/>
+                            <circle cx="142" cy="26" r="10"/>
+                            <circle cx="58" cy="74" r="10"/>
+                            <circle cx="142" cy="74" r="10"/>
+                            <path d="M68 26h64M68 74h64M58 36v28M142 36v28" opacity="0.45"/>
+                            <rect x="87" y="46" width="26" height="19" rx="3.5"/>
+                            <path d="M92 46v-5a8 8 0 0116 0v5"/>
+                            <circle cx="100" cy="55" r="2.6" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </div>
                     <span class="vcard__q"><span class="vcard__qnum">3</span>&nbsp;&nbsp;&nbsp;&nbsp;CHALLENGE</span>
                     <h3 class="vcard__title">Trustworthy Collaboration<span class="kr">신뢰할 수 있는 협업</span></h3>
                     <p class="vcard__desc">
@@ -110,36 +153,38 @@
                         asynchronous, loosely-coupled workflows need flexible transaction patterns (Saga) with security
                         policy baked in and formally verified.
                     </p>
-                    <div class="vcard__proj">
-                        Extends the Saga transaction pattern (cf. SagaLLM, VLDB 2025) with OPA-based access
-                        control and TLA+ / TLC verification of four properties (data isolation, content isolation,
-                        atomic termination, compensation completeness).
-                        <span class="stat">Policy enforcement adds only <b>~29 ms</b> on average &mdash; practically
-                        free safety.</span>
-                    </div>
+                    <figure class="vcard__fig">
+                        <img src="files/projects/opa_transaction.png" alt="OPA engine evaluates Rego policies and data — the application sends a query and receives a decision to execute">
+                    </figure>
                 </article>
 
                 <article class="vcard">
+                    <div class="vcard__illust">
+                        <svg viewBox="0 0 200 100" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M40 30l-16 20 16 20"/>
+                            <path d="M60 30l16 20-16 20"/>
+                            <path d="M54 26l-8 48" opacity="0.5"/>
+                            <path d="M92 50h22"/>
+                            <path d="M107 43l8 7-8 7"/>
+                            <path d="M152 16l25 9v20c0 19-13 29-25 36-12-7-25-17-25-36V25z"/>
+                            <path d="M141 50l8 8 15-16"/>
+                        </svg>
+                    </div>
                     <span class="vcard__q"><span class="vcard__qnum">4</span>&nbsp;&nbsp;&nbsp;&nbsp;CHALLENGE</span>
                     <h3 class="vcard__title">Complete Program Proof<span class="kr">완벽한 프로그램 증명</span></h3>
                     <p class="vcard__desc">
-                        These protocols ultimately become implementation code and change often; in this domain even
-                        tiny defects are catastrophic. Formal verification is the only way to mathematically guarantee
-                        correctness &mdash; but it is extremely costly (seL4 took ~11 years), so automating proof
-                        generation is the key bottleneck.
+                        These protocols ultimately become implementation code &mdash; often spanning several languages
+                        &mdash; and change often; in this domain even tiny defects are catastrophic. Formal verification
+                        is the only way to mathematically guarantee correctness, but it is extremely costly (seL4 took
+                        ~11 years). We attack this on two fronts: a <b>multi-language verification framework</b> and
+                        <b>automated proof generation</b> to remove the biggest bottleneck.
                     </p>
-                    <div class="vcard__proj">
-                        Structurally mimics human proof reasoning: BEAM search
-                        over multiple promising candidates per step, structurally-similar (not keyword-based) lemma
-                        hints via intermediate proof-state comparison, and a Proof-IDE to obtain command ingredients.
-                        <span class="stat">Consistently higher proof success under the <b>same time / token budget</b>.</span>
-                    </div>
                 </article>
             </div>
 
             <p class="vision__lead" style="margin-top:26px;">
-                Our lab is the only one in Korea researching this entire pipeline end-to-end.
-                <span class="kr">우리 연구실은 국내에서 유일하게 이 전체 파이프라인을 엔드투엔드로 연구하고 있습니다.</span>
+                Our lab researches this entire pipeline end-to-end.
+                <span class="kr">우리 연구실은 이 전체 파이프라인을 엔드투엔드로 연구하고 있습니다.</span>
             </p>
         </section>
 
@@ -177,9 +222,13 @@
             </ul>
         </section>
 
-        <!-- Formal Verification -->
+        <!-- Foundations & Past Projects -->
         <section class="section reveal">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Background, Foundational and Past Work</h2>
+            <p style="color:var(--text-muted); max-width:76ch; margin:0 0 28px;">
+                Earlier work and foundational research that underpins the vision above &mdash; the core techniques in
+                formal verification, distributed systems, and systems software that the four challenges build on.
+            </p>
 
             <article class="proj">
                 <h3>Formal Verification</h3>
