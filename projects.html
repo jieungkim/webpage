@@ -1,452 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Jieung Kim</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
-
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
-
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
-
-        <!-- Font Awesome -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
+<head>
+    <meta charset="utf-8">
+    <title>Projects — Jieung Kim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research projects by Jieung Kim — formal verification, distributed systems, and neural network reliability.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f57d8'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='34' font-weight='700' fill='white' text-anchor='middle'%3EJK%3C/text%3E%3C/svg%3E">
+    <script>(function(){try{var t=localStorage.getItem('jk-theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link href="css/modern.css" rel="stylesheet">
+</head>
 <body>
-    <div class="wrapper">
-        <div class="sidebar">
-            <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">                   
-                <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" src="img/profile.jpg" alt="Image">
-                <h1 class="font-weight-bold">Jieung Kim</h1>
-                <p class="mb-4">
-                    I am Jieung Kim,</br>
-                    an <b>assistant professor</b> in the <b>Department of Computer Science</b>, <b>College of Computing</b></br> 
-                    at <b>Yonsei University</b>, 
-                    South Korea. </br>
-                    I am interested in designing secure-guaranteed systems using multiple formal techniques.
-                </p>
-                <div class="d-flex justify-content-center mb-5">
-                    <a class="btn btn-outline-primary mr-2" href="https://www.facebook.com/jieung.gabe.kim/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary mr-2" href="https://www.linkedin.com/in/jieungkim/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <a href="https://docs.google.com/document/d/1AX3h8Ws3Rb5N-RKGnJyiLlyXVIiErwRFxwdGfQD0ruk/edit?usp=sharing">
-                    <u>Curriculum Vitae</u></a> 
-                    <a href="https://scholar.google.com/citations?hl=ko&user=HbBHX4IAAAAJ"><u>Google Scholar</u></a> <a
-                    href="https://dblp.org/pid/64/10475.html"><u>DBLP</u></a>
-            </div>
-            <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
-                <i class="fas fa-2x fa-angle-double-right text-primary"></i>
+    <!-- Navbar -->
+    <header class="nav">
+        <div class="nav__inner">
+            <a class="nav__brand" href="index.html">Jieung&nbsp;Kim</a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="publication.html">Publications</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a class="ext-arrow" href="https://sites.google.com/view/fcai-lab" target="_blank" rel="noopener">FCAI Lab</a></li>
+                </ul>
+            </nav>
+            <div class="nav__right">
+                <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+                <button class="nav__burger" type="button" aria-label="Menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
             </div>
         </div>
-        <div class="content">
-            <!-- Navbar Start -->
-            <div class="container p-0">
-                <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
-                    <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav m-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu">
-                                    <a href="projects.html" class="dropdown-item">Projects</a>
-                                    <a href="publication.html" class="dropdown-item">Publication</a>
-                                    <a href="blog.html" class="dropdown-item">Blog</a>
-                                </div>
-                            </div>
-                            <a href="https://sites.google.com/view/fcai-lab" class="nav-item nav-link">FCAI Lab.</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <!-- Navbar End -->
+    </header>
 
-                <!-- Carousel Start -->
-                <div class="container p-0">
-                    <div id="blog-carousel" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="w-100" src="img/background.png" alt="Image">
-                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                    <h2 class="mb-3 text-white font-weight-bold">Welcome to Jieung Kim's Page</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel End -->
+    <main class="container">
+        <!-- Research Vision -->
+        <section class="section reveal" style="border-top:none;">
+            <h2 class="section-title">Research Vision</h2>
+            <p class="vision__lead">
+                <b>Trustworthy Edge Collaboration Infrastructure for the Physical AI Era.</b>
+                In the Physical AI era, countless edge devices &mdash; humanoid robots, autonomous mobility, drones and
+                logistics robots, smart factories &mdash; are connected and act directly in the physical world. Edge
+                devices are no longer simple terminals: they <i>perceive, decide, and physically act</i>, learning and
+                executing on-site. For such a system to be <b>safe, trustworthy, and correct</b>, we must guarantee the
+                integrity of execution and provide safe recovery from faults. My lab
+                (<a href="https://sites.google.com/view/fcai-lab" target="_blank" rel="noopener">FCAI Lab</a>) tackles
+                this <b>end-to-end</b> through four challenges.
+                <span class="kr">&mdash; 로봇 · 모빌리티 · 인프라가 연결되어 물리 세계에서 함께 살아가는 Physical AI 시대의 신뢰 가능한 Edge 협업 인프라를 연구합니다.</span>
+            </p>
 
-            <!-- Work Experience Start -->
-            <div class="container bg-white pt-5">
-                <div class="row px-3 pb-5">
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Grant</h2>
-                        <p class="m-0">
-                            <li><b>광 컴퓨팅 연산기 지원 딥러닝 컴파일러 설계 및 프로토타입 개발</b>, <u>위탁과제(ETRI)</u>,
-                            2025.03.01~2027.02.28 (참여 연구원)</li>
-                            <li><b>A Flexible and Scalable Modular Development and Verification Methodology for Distributed Systems Based on Compositional Consensus Algorithms 
-                                (통합 합의 알고리즘 기반 분산 시스템을 위한 유연하고 확장 가능한 모듈화 개발 및 검증 방법론)</b>, 
-                                <u>Outstanding Young Scientist Grant/National Research Foundation (우수신진연구/한국연구재단)</u>,
-                            2025.03.01~2027.02.28 (PI)</li>
-                            <li><b>A Fundamental Technology for Modular Neural
-                                Network Verification (신경망 분해/통합 검증을 위한 원천 기술
-                                연구)</b>, <u>삼성미래기술육성재단</u>,
-                            2023.12.01~2026.11.30 (PI)</li>
-                            <li><b>Formal approaches to achieve accuracy of
-                                quantized neural network</b>, <u>Korea Model
-                                Optimization Program, Google Korea</u>,
-                            2023.09.22~2024.09.21 (PI)</li>
-                        </p>
-                    </div>              
-
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Research Interest</h2>
-                        <p class="m-0">
-                            <li>Reliability in system software (시스템 소프트웨어 신뢰성 -
-                                distributed system, blockchain, hypervisor,
-                                operating systems, computational storage)</li>
-                            <li>Reliability in neural network (신경망 신뢰성 - framework &
-                                model reliability)</li>
-                            <li>Formal verification (정형 검증)</li>
-                            <li>Fuzzing (퍼징)</li>
-                            <li>Programming language design & theory (프로그래밍 언어 설계 및
-                                이론)</li>
-                            <li>Formal verification automation (정형 검증 자동화)</li>
-                            <li>Formal verification theories and tools (정형 검증 이론 및
-                                도구)</li>
-    
-                        </p>
-                    </div>              
-
-
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Formal Verification Projects</h2>
-                        <p class="m-0">
-                            Most of my projects are related to formal verification, "<i>the
-                                act of proving or disproving the correctness of intended
-                                algorithms underlying a system with respect to a certain
-                                formal specification or property, using formal methods
-                                of
-                                mathematics</i> (from Wikipedia)".
-                            Formal verification requires multiple components 1) a target
-                            program, 2) a mathematical specification for the program, 3)
-                            a
-                            mathematical relation to define the consistency between the
-                            program and the specification,
-                            and proofs and a proof checker to actually show the
-                            correctness
-                            of the program and the specification. The below figure shows
-                            how
-                            key components in formal verification are related to
-                            others.<br /><br />
-                            <center>
-                                <figure>
-                                    <img src="files/projects/formal_verification.png"
-                                        alt="Trulli" style="width:85%">
-                                </figure>
-                            </center>
-                            <br />
-                            Formal verification has several granularities, and it is the
-                            most strongest way to guarantee the correctness of the
-                            software
-                            (by showing the target software faithfully implements the
-                            rigorous specification).
-                            However, it is not practical due to the high verification
-                            cost.
-                            My main works are related to reducing the cost while fully
-                            facilitating the power of formal verification. To do that,
-                            we
-                            usually use modular way
-                            to separately verify multiple components in the software and
-                            compose those proofs together to show the entire correctness
-                            as
-                            the below figure shows.<br /><br />
-                            <center>
-                                <figure>
-                                    <img src="files/projects/compositional_formal_verification.png"
-                                        alt="Trulli" style="width:85%">
-                                </figure>
-                            </center>
-                            <br />
-            
-                        </p>
-                    </div>       
-                    
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Machine Learning Model Correctness Verification</h2>
-                        <p class="m-0">
-                            The Software 2.0 era has seen a significant increase in neural
-                            network-based software and services, raising concerns about
-                            potential costs related to neural network failures. Formal
-                            verification stands out as the singular approach to ultimately
-                            guarantee correctness, but challenges persist in the application
-                            of formal verification to this domain. Even state-of-the-art
-                            techniques for neural network verification face limitations in
-                            two crucial verification components. Current methodologies do
-                            not fully illustrate the complete behavior of neural networks as
-                            formal specifications; instead, these techniques primarily focus
-                            on local robustness. Furthermore, they continue to struggle with
-                            the efficient management of large-scale models and face
-                            challenges in achieving optimal reusability.
-                            <br /> <br />
-                            To address the stated challenges, our objective is to develop
-                            the foundational theory and methodology for neural network
-                            verification. Drawing inspiration from concepts in the formal
-                            verification of conventional software and considering the
-                            distinctive characteristics of neural network domains, we aim to
-                            create a methodology that precisely articulates multiple desired
-                            properties of target networks in a mathematically rigorous
-                            manner, without restricting the types of these properties.
-                            Furthermore, we put forward a modular verification approach
-                            based on both the stated specifications and the target network
-                            structure. We are confident that our endeavors will boost the
-                            reliability of neural networks, thereby opening pathways for
-                            building critical network-related applications and societal
-                            advancements.
-    
-                        </p>
-                    </div>     
-                    
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">ADO: Atomic Distributed Objects - Distributed System
-                            Verification</h2>
-                        <p class="m-0">
-                            The low-level parts of distributed systems are usually built
-                            with distributed consensus protocols that guarantees the
-                            consistency in a certain level.
-                            Among them, there are several strongly consistent protocols
-                            such
-                            as Paxos, Raft, and Chain-replication. They provides the
-                            strong
-                            guarantee that
-                            users view the same state regardless of any kinds of network
-                            and
-                            local machine errors in distributed systems.
-            
-                            However, due to the complexity of those protocols,
-                            application
-                            builders usually use State Machine Replication (SMR) as a
-                            abstraction of those protocols
-                            that are used for the same purpose. However, SMR sacrifices
-                            possessing all possible behaviors (i.e., partial failures)
-                            of
-                            those protocols in the model.
-                            Therefore, we work on providing a proper but simple program
-                            abstraction for multiple distributed protocols and systems
-                            with
-                            formal verification.<br /><br />
-                            <center>
-                                <figure>
-                                    <img src="files/projects/ADO.png" alt="Trulli"
-                                        style="width:50%">
-                                </figure>
-                            </center><br />
-                            Also, We provide template-driven protocol safety proof
-                            (linearizability) for developers to enable them
-                            not to consider distributed features while
-                            writing specifications and programs in their
-                            development.
-    
-                        </p>
-                    </div>               
-                    
-                    
-                        <div class="col-md-12">
-                            <h2 class="mb-4 font-weight-bold">Formal verification on pKVM</h2>
-                            <p class="m-0">
-                                pKVM is a hypervisor for Android to increase security in the
-                                future Android ecosystem. Please look at the below video to
-                                learn more about pKVM.<br /><br />
-                
-                                <center>
-                                    <iframe width="560" height="315"
-                                        src="https://www.youtube.com/embed/wY-u6n75iXc"
-                                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                                            encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                                </center>
-                                <br />
-                                We are developing end-to-end formal verification tools for
-                                pKVM
-                                and verify it! It includes the following things.
-                                <ul style="list-style-type:disc">
-                                    <li>A language for writing formal specifications and
-                                        tests
-                                        for specifications.</li>
-                                    <li>Novel composition theory and tool for formal
-                                        verification.</li>
-                                    <li>Automated tools to reduce the human cost in the
-                                        formal
-                                        verification.</li>
-                                    <li>Formally defined hardware specifications.</li>
-                                    <li>Translation validations for the C code compilation.</li>
-                                </ul>
-            
-                            </p>
-                        </div>      
-
-                            <div class="col-md-12">
-                                <h2 class="mb-4 font-weight-bold">CertiKOS</h2>
-                                <p class="m-0">
-                                    CertiKOS is an extensible architecture for building
-                                    certified
-                                    concurrent OS kernels.
-                                    Complete formal verification of a non-trivial concurrent OS
-                                    kernel is widely considered a grand challenge.
-                                    We present a novel compositional approach for building
-                                    certified
-                                    concurrent OS kernels.
-                                    CertiKOS is not a fully practical operating system, but
-                                    contains
-                                    multiple services that can be used with restricted purposes.
-                                    The below figure shows how we build CertiKOS with 6500 lines
-                                    of
-                                    C and x86 assembly.<br /><br />
-                                    <center>
-                                        <figure>
-                                            <img src="files/projects/CertiKOSArchitecture.png"
-                                                alt="Trulli" style="width:65%">
-                                        </figure>
-                                    </center><br />
-                    
-                                    With the kernel, the main purpose of our formal verification
-                                    is
-                                    showing that all user programs running on top of our formal
-                                    specification
-                                    faithfully reflects the all behaviors of running the same
-                                    user
-                                    programs on top of the kernel implementation (see
-                                    below).<br /><br />
-                                    <center>
-                                        <figure>
-                                            <img src="files/projects/CertiKOS_top_level_theorem.png"
-                                                alt="Trulli" style="width:85%">
-                                        </figure>
-                                    </center><br />
-                                    To show that, we aggressively decompose the kernel into
-                                    multiple
-                                    layers (65 layers) and granulary provide abstractions of
-                                    each
-                                    layer.
-                                    The below figure shows the overall module hierarchy of
-                                    CertiKOS.<br /><br />
-                                    <center>
-                                        <figure>
-                                            <img src="files/projects/CertiKOSLayers.png"
-                                                alt="Trulli" style="width:85%">
-                                        </figure>
-                                    </center><br />
-                    
-                                    Each model contains multiple layers in it to ease the
-                                    verification process. For example, MCS Lock formal
-                                    verification
-                                    consists of six layers to provide the abstracted lock
-                                    specification that can also be used as a specification of
-                                    other
-                                    lock algorithms and implementations (e.g., ticket
-                                    lock).<br /><br />
-                                    <center>
-                                        <figure>
-                                            <img src="files/projects/MCSLockLayers.png" alt="Trulli"
-                                                style="width:85%">
-                                        </figure>
-                                    </center><br />
-                                    We are working on improving the methodologies that we have
-                                    used
-                                    in CertiKOS and extending CertiKOS. Possible extensions are
-                                    as
-                                    follows.
-                                    <ul style="list-style-type:disc;">
-                                        <li>CertiKOS ARM Hypervisor: verifying
-                                            functional correctness and security property
-                                            (integrity and confidentiality of CertiKOS
-                                            hypervisor on ARM platform</li>
-                                        <li>Concurrent Linking Framework: providing a
-                                            user-friendly framework to link multiple
-                                            separate instances in concurrent program
-                                            verification and link CeriKOS proofs using
-                                            this framework as an example</li>
-                                        <li>User Program Linking: providing a framework
-                                            to link separately developed and verified
-                                            user programs with CertiKOS</li>
-                                    </ul>
-                
-                
-                                </p>
-                            </div>      
-
-                            <div class="col-md-12">
-                                <h2 class="mb-4 font-weight-bold">Other Projects</h2>
-                                <p class="m-0">
-                                    <h5>Quantization Benchmarks</h5>
-                                    Quantization is the process of mapping continuous infinite
-                                    values to a smaller set of discrete finite values
-                                    and it is one of the most prevelent optimization techniques
-                                    for
-                                    machine learning models.
-                                    We are working on how to measure the effect of multiple
-                                    quantization options. 
-
-                                    <h5>Smart Contract Synthesis</h5>
-                                    A smart contract is a self-executing contract with the terms
-                                    of
-                                    the agreement between buyer and seller being directly
-                                    written
-                                    into lines of code.
-                                    We are working on building a tool to automatically
-                                    synthesize
-                                    smart contracts for specific domains.                
-                                </p>
-                            </div>      
-
-
-
-
-
-                </div>
+            <div class="vision__core">
+                <span class="vision__core-label">Core approach</span>
+                <span class="vision__core-item">Abstraction</span>
+                <span class="vision__core-sep">&middot;</span>
+                <span class="vision__core-item">Modularization</span>
+                <span class="vision__core-sep">&middot;</span>
+                <span class="vision__core-item">Metric</span>
+                <span class="vision__core-sep">&middot;</span>
+                <span class="vision__core-item">Formal Verification</span>
             </div>
 
+            <div class="vision__grid">
+                <article class="vcard">
+                    <span class="vcard__q"><span class="vcard__qnum">1</span>&nbsp;&nbsp;&nbsp;&nbsp;CHALLENGE</span>
+                    <h3 class="vcard__title">Safe Data Collection<span class="kr">안전한 데이터 수집</span></h3>
+                    <p class="vcard__desc">
+                        When many edge devices learn from real-time streams, can we filter malicious poisoning
+                        <i>before</i> it is absorbed into the model? Since poison, once learned, is hard to undo, clean
+                        data must be preserved while poison is blocked pre-emptively.
+                    </p>
+                    <div class="vcard__proj">
+                        Geometry-based pre-update poison screening &mdash;
+                        cross-checks incoming batches from five views (loss, gradient norm, Fisher-whitened gradient,
+                        Mahalanobis in gradient/feature space).
+                        <span class="stat">Detects poison at a <b>0.05%</b> rate with <b>100%</b> recall; suppresses
+                        attack success from <b>87&ndash;95%</b> to <b>~0%</b> with no accuracy loss.</span>
+                    </div>
+                </article>
 
+                <article class="vcard">
+                    <span class="vcard__q"><span class="vcard__qnum">2</span>&nbsp;&nbsp;&nbsp;&nbsp;CHALLENGE</span>
+                    <h3 class="vcard__title">Efficient Model Decomposition &amp; Deployment<span class="kr">효율적 모델 분할 · 배포</span></h3>
+                    <p class="vcard__desc">
+                        Not every device needs the full network. Can we cut out only the required functionality (classes)
+                        and deploy it while preserving the original model's decisions? We treat <i>decomposability</i>
+                        as a property that demands both semantic preservation and structural separation.
+                    </p>
+                    <div class="vcard__proj">
+                        Semantic-aware, verification-driven decomposition &mdash; a
+                        pipeline that decomposes into per-class components, generates decision-boundary samples
+                        (PGD + binary search), learns binary masks, and evaluates a decomposition &ldquo;contract.&rdquo;
+                        <span class="stat">Diagnoses causes and recommends retraining when the contract is unmet &mdash;
+                        an <b>&ldquo;undecomposable&rdquo;</b> verdict is itself a valid output.</span>
+                    </div>
+                </article>
 
+                <article class="vcard">
+                    <span class="vcard__q"><span class="vcard__qnum">3</span>&nbsp;&nbsp;&nbsp;&nbsp;CHALLENGE</span>
+                    <h3 class="vcard__title">Trustworthy Collaboration<span class="kr">신뢰할 수 있는 협업</span></h3>
+                    <p class="vcard__desc">
+                        Agents whose number and type change constantly must coordinate through transactions while
+                        preserving authority and data security &mdash; unlike closed servers or blockchains. Long-running,
+                        asynchronous, loosely-coupled workflows need flexible transaction patterns (Saga) with security
+                        policy baked in and formally verified.
+                    </p>
+                    <div class="vcard__proj">
+                        Extends the Saga transaction pattern (cf. SagaLLM, VLDB 2025) with OPA-based access
+                        control and TLA+ / TLC verification of four properties (data isolation, content isolation,
+                        atomic termination, compensation completeness).
+                        <span class="stat">Policy enforcement adds only <b>~29 ms</b> on average &mdash; practically
+                        free safety.</span>
+                    </div>
+                </article>
 
+                <article class="vcard">
+                    <span class="vcard__q"><span class="vcard__qnum">4</span>&nbsp;&nbsp;&nbsp;&nbsp;CHALLENGE</span>
+                    <h3 class="vcard__title">Complete Program Proof<span class="kr">완벽한 프로그램 증명</span></h3>
+                    <p class="vcard__desc">
+                        These protocols ultimately become implementation code and change often; in this domain even
+                        tiny defects are catastrophic. Formal verification is the only way to mathematically guarantee
+                        correctness &mdash; but it is extremely costly (seL4 took ~11 years), so automating proof
+                        generation is the key bottleneck.
+                    </p>
+                    <div class="vcard__proj">
+                        Structurally mimics human proof reasoning: BEAM search
+                        over multiple promising candidates per step, structurally-similar (not keyword-based) lemma
+                        hints via intermediate proof-state comparison, and a Proof-IDE to obtain command ingredients.
+                        <span class="stat">Consistently higher proof success under the <b>same time / token budget</b>.</span>
+                    </div>
+                </article>
+            </div>
 
-            <!-- Footer Start -->
-            <div class="container py-4 bg-secondary text-center">
-                <p class="m-0 text-white">
-                    &copy; <a class="text-white font-weight-bold" href="https://jieung.kim">Jieung Kim</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            <p class="vision__lead" style="margin-top:26px;">
+                Our lab is the only one in Korea researching this entire pipeline end-to-end.
+                <span class="kr">우리 연구실은 국내에서 유일하게 이 전체 파이프라인을 엔드투엔드로 연구하고 있습니다.</span>
+            </p>
+        </section>
+
+        <!-- Grants -->
+        <section class="section reveal">
+            <h2 class="section-title">Grants</h2>
+            <ul class="tick-list">
+                <li><b>Development of Industry-Specific Physical AI Foundation Models and Cultivation of Next-Generation Convergence Talent (산업 특화 Physical AI 파운데이션 모델 개발 및 차세대 융합형 인재양성)</b>, <em>Institute of Information &amp; Communications Technology Planning &amp; Evaluation (IITP, 정보통신기획평가원) &mdash; consortium led by Lotte Innovate</em>, 2026.04.01&ndash;2029.12.31 (Phase&nbsp;1 through 2027.12.31) (PI of the Yonsei University subproject, carried out jointly with two other research groups at Yonsei)</li>
+                <li><b>광 컴퓨팅 연산기 지원 딥러닝 컴파일러 설계 및 프로토타입 개발</b>, <em>위탁과제(ETRI)</em>, 2025.03.01&ndash;2027.02.28 (참여 연구원)</li>
+                <li><b>A Flexible and Scalable Modular Development and Verification Methodology for Distributed Systems Based on Compositional Consensus Algorithms (통합 합의 알고리즘 기반 분산 시스템을 위한 유연하고 확장 가능한 모듈화 개발 및 검증 방법론)</b>, <em>Outstanding Young Scientist Grant / National Research Foundation (우수신진연구/한국연구재단)</em>, 2025.03.01&ndash;2027.02.28 (PI)</li>
+                <li><b>A Fundamental Technology for Modular Neural Network Verification (신경망 분해/통합 검증을 위한 원천 기술 연구)</b>, <em>삼성미래기술육성재단</em>, 2023.12.01&ndash;2026.11.30 (PI)</li>
+                <li><b>Formal approaches to achieve accuracy of quantized neural network</b>, <em>Korea Model Optimization Program, Google Korea</em>, 2023.09.22&ndash;2024.09.21 (PI)</li>
+            </ul>
+        </section>
+
+        <!-- Research Interests -->
+        <section class="section reveal">
+            <h2 class="section-title">Research Interests</h2>
+            <ul class="tags">
+                <li>Physical AI &amp; edge collaboration infrastructure</li>
+                <li>Trustworthy multi-agent (LLM) systems</li>
+                <li>Data poisoning defense</li>
+                <li>Neural network decomposition &amp; deployment</li>
+                <li>Proof automation</li>
+                <li>Reliability in system software</li>
+                <li>Distributed systems &amp; blockchain</li>
+                <li>Hypervisor &amp; operating systems</li>
+                <li>Computational storage</li>
+                <li>Neural network reliability</li>
+                <li>Formal verification</li>
+                <li>Fuzzing</li>
+                <li>Programming language design &amp; theory</li>
+                <li>Formal verification automation</li>
+                <li>Verification theories &amp; tools</li>
+            </ul>
+        </section>
+
+        <!-- Formal Verification -->
+        <section class="section reveal">
+            <h2 class="section-title">Featured Projects</h2>
+
+            <article class="proj">
+                <h3>Formal Verification</h3>
+                <p>
+                    Most of my projects are related to formal verification, &ldquo;<i>the act of proving or disproving
+                    the correctness of intended algorithms underlying a system with respect to a certain formal
+                    specification or property, using formal methods of mathematics</i> (from Wikipedia)&rdquo;.
+                    Formal verification requires multiple components: 1) a target program, 2) a mathematical
+                    specification for the program, 3) a mathematical relation to define the consistency between the
+                    program and the specification, and proofs and a proof checker to actually show the correctness of
+                    the program and the specification. The figure below shows how key components in formal verification
+                    are related to one another.
                 </p>
-            </div>
-            <!-- Footer End -->
+                <figure><img src="files/projects/formal_verification.png" alt="Key components of formal verification"></figure>
+                <p>
+                    Formal verification has several granularities, and it is the strongest way to guarantee the
+                    correctness of software (by showing the target software faithfully implements the rigorous
+                    specification). However, it is not practical due to the high verification cost. My main work is
+                    related to reducing the cost while fully facilitating the power of formal verification. To do that,
+                    we usually use a modular way to separately verify multiple components in the software and compose
+                    those proofs together to show the entire correctness, as the figure below shows.
+                </p>
+                <figure><img src="files/projects/compositional_formal_verification.png" alt="Compositional formal verification"></figure>
+            </article>
+
+            <article class="proj">
+                <h3>Machine Learning Model Correctness Verification</h3>
+                <p>
+                    The Software 2.0 era has seen a significant increase in neural network-based software and services,
+                    raising concerns about potential costs related to neural network failures. Formal verification
+                    stands out as the singular approach to ultimately guarantee correctness, but challenges persist in
+                    the application of formal verification to this domain. Even state-of-the-art techniques for neural
+                    network verification face limitations in two crucial verification components. Current methodologies
+                    do not fully illustrate the complete behavior of neural networks as formal specifications; instead,
+                    these techniques primarily focus on local robustness. Furthermore, they continue to struggle with
+                    the efficient management of large-scale models and face challenges in achieving optimal reusability.
+                </p>
+                <p>
+                    To address the stated challenges, our objective is to develop the foundational theory and
+                    methodology for neural network verification. Drawing inspiration from concepts in the formal
+                    verification of conventional software and considering the distinctive characteristics of neural
+                    network domains, we aim to create a methodology that precisely articulates multiple desired
+                    properties of target networks in a mathematically rigorous manner, without restricting the types of
+                    these properties. Furthermore, we put forward a modular verification approach based on both the
+                    stated specifications and the target network structure. We are confident that our endeavors will
+                    boost the reliability of neural networks, thereby opening pathways for building critical
+                    network-related applications and societal advancements.
+                </p>
+            </article>
+
+            <article class="proj">
+                <h3>ADO: Atomic Distributed Objects &mdash; Distributed System Verification</h3>
+                <p>
+                    The low-level parts of distributed systems are usually built with distributed consensus protocols
+                    that guarantee consistency at a certain level. Among them, there are several strongly consistent
+                    protocols such as Paxos, Raft, and Chain-replication. They provide the strong guarantee that users
+                    view the same state regardless of any kinds of network and local machine errors in distributed
+                    systems.
+                </p>
+                <p>
+                    However, due to the complexity of those protocols, application builders usually use State Machine
+                    Replication (SMR) as an abstraction of those protocols that are used for the same purpose. However,
+                    SMR sacrifices possessing all possible behaviors (i.e., partial failures) of those protocols in the
+                    model. Therefore, we work on providing a proper but simple program abstraction for multiple
+                    distributed protocols and systems with formal verification.
+                </p>
+                <figure><img src="files/projects/ADO.png" alt="Atomic Distributed Objects" style="max-width:60%;"></figure>
+                <p>
+                    Also, we provide template-driven protocol safety proof (linearizability) for developers, to enable
+                    them not to consider distributed features while writing specifications and programs in their
+                    development.
+                </p>
+            </article>
+
+            <article class="proj">
+                <h3>Formal Verification on pKVM</h3>
+                <p>
+                    pKVM is a hypervisor for Android to increase security in the future Android ecosystem. Please look
+                    at the video below to learn more about pKVM.
+                </p>
+                <div class="video-wrap">
+                    <iframe src="https://www.youtube.com/embed/wY-u6n75iXc" title="pKVM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>We are developing end-to-end formal verification tools for pKVM and verifying it. It includes the following.</p>
+                <ul>
+                    <li>A language for writing formal specifications and tests for specifications.</li>
+                    <li>Novel composition theory and tools for formal verification.</li>
+                    <li>Automated tools to reduce the human cost of formal verification.</li>
+                    <li>Formally defined hardware specifications.</li>
+                    <li>Translation validation for C code compilation.</li>
+                </ul>
+            </article>
+
+            <article class="proj">
+                <h3>CertiKOS</h3>
+                <p>
+                    CertiKOS is an extensible architecture for building certified concurrent OS kernels. Complete formal
+                    verification of a non-trivial concurrent OS kernel is widely considered a grand challenge. We
+                    present a novel compositional approach for building certified concurrent OS kernels. CertiKOS is not
+                    a fully practical operating system, but it contains multiple services that can be used for
+                    restricted purposes. The figure below shows how we build CertiKOS with 6500 lines of C and x86
+                    assembly.
+                </p>
+                <figure><img src="files/projects/CertiKOSArchitecture.png" alt="CertiKOS architecture" style="max-width:70%;"></figure>
+                <p>
+                    With the kernel, the main purpose of our formal verification is showing that all user programs
+                    running on top of our formal specification faithfully reflect all the behaviors of running the same
+                    user programs on top of the kernel implementation (see below).
+                </p>
+                <figure><img src="files/projects/CertiKOS_top_level_theorem.png" alt="CertiKOS top-level theorem"></figure>
+                <p>
+                    To show that, we aggressively decompose the kernel into multiple layers (65 layers) and granularly
+                    provide abstractions of each layer. The figure below shows the overall module hierarchy of CertiKOS.
+                </p>
+                <figure><img src="files/projects/CertiKOSLayers.png" alt="CertiKOS layers"></figure>
+                <p>
+                    Each model contains multiple layers to ease the verification process. For example, MCS Lock formal
+                    verification consists of six layers to provide the abstracted lock specification that can also be
+                    used as a specification of other lock algorithms and implementations (e.g., ticket lock).
+                </p>
+                <figure><img src="files/projects/MCSLockLayers.png" alt="MCS lock layers"></figure>
+                <p>We are working on improving the methodologies used in CertiKOS and extending CertiKOS. Possible extensions are as follows.</p>
+                <ul>
+                    <li>CertiKOS ARM Hypervisor: verifying functional correctness and security properties (integrity and confidentiality) of the CertiKOS hypervisor on the ARM platform.</li>
+                    <li>Concurrent Linking Framework: providing a user-friendly framework to link multiple separate instances in concurrent program verification, and linking CertiKOS proofs using this framework as an example.</li>
+                    <li>User Program Linking: providing a framework to link separately developed and verified user programs with CertiKOS.</li>
+                </ul>
+            </article>
+
+            <article class="proj">
+                <h3>Other Projects</h3>
+                <h5>Quantization Benchmarks</h5>
+                <p>
+                    Quantization is the process of mapping continuous infinite values to a smaller set of discrete
+                    finite values, and it is one of the most prevalent optimization techniques for machine learning
+                    models. We are working on how to measure the effect of multiple quantization options.
+                </p>
+                <h5>Smart Contract Synthesis</h5>
+                <p>
+                    A smart contract is a self-executing contract with the terms of the agreement between buyer and
+                    seller being directly written into lines of code. We are working on building a tool to automatically
+                    synthesize smart contracts for specific domains.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span>&copy; 2026 <a href="https://jieung.kim">Jieung Kim</a>. All rights reserved.</span>
+            <span>Yonsei University &middot; Seoul, Korea</span>
         </div>
-    </div>
+    </footer>
 
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a href="#" class="to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/site.js"></script>
 </body>
-
 </html>

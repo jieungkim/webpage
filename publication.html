@@ -1,301 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Jieung Kim</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
-
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
-
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
-
-        <!-- Font Awesome -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
+<head>
+    <meta charset="utf-8">
+    <title>Publications — Jieung Kim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Publications by Jieung Kim — formal verification, distributed systems, and systems software.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f57d8'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='34' font-weight='700' fill='white' text-anchor='middle'%3EJK%3C/text%3E%3C/svg%3E">
+    <script>(function(){try{var t=localStorage.getItem('jk-theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link href="css/modern.css" rel="stylesheet">
+</head>
 <body>
-    <div class="wrapper">
-        <div class="sidebar">
-            <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">                   
-                <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" src="img/profile.jpg" alt="Image">
-                <h1 class="font-weight-bold">Jieung Kim</h1>
-                <p class="mb-4">
-                    I am Jieung Kim,</br>
-                    an <b>assistant professor</b> in the <b>Department of Computer Science</b>, <b>College of Computing</b></br> 
-                    at <b>Yonsei University</b>, 
-                    South Korea. </br>
-                    I am interested in designing secure-guaranteed systems using multiple formal techniques.
-                </p>
-                <div class="d-flex justify-content-center mb-5">
-                    <a class="btn btn-outline-primary mr-2" href="https://www.facebook.com/jieung.gabe.kim/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary mr-2" href="https://www.linkedin.com/in/jieungkim/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <a href="https://docs.google.com/document/d/1AX3h8Ws3Rb5N-RKGnJyiLlyXVIiErwRFxwdGfQD0ruk/edit?usp=sharing">
-                    <u>Curriculum Vitae</u></a> 
-                    <a href="https://scholar.google.com/citations?hl=ko&user=HbBHX4IAAAAJ"><u>Google Scholar</u></a> <a
-                    href="https://dblp.org/pid/64/10475.html"><u>DBLP</u></a>
-            </div>
-            <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
-                <i class="fas fa-2x fa-angle-double-right text-primary"></i>
+    <!-- Navbar -->
+    <header class="nav">
+        <div class="nav__inner">
+            <a class="nav__brand" href="index.html">Jieung&nbsp;Kim</a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="publication.html">Publications</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a class="ext-arrow" href="https://sites.google.com/view/fcai-lab" target="_blank" rel="noopener">FCAI Lab</a></li>
+                </ul>
+            </nav>
+            <div class="nav__right">
+                <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+                <button class="nav__burger" type="button" aria-label="Menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
             </div>
         </div>
-        <div class="content">
-            <!-- Navbar Start -->
-            <div class="container p-0">
-                <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
-                    <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav m-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu">
-                                    <a href="projects.html" class="dropdown-item">Projects</a>
-                                    <a href="publication.html" class="dropdown-item">Publication</a>
-                                    <a href="blog.html" class="dropdown-item">Blog</a>
-                                </div>
-                            </div>
-                            <a href="https://sites.google.com/view/fcai-lab" class="nav-item nav-link">FCAI Lab.</a>
-                        </div>
+    </header>
+
+    <main class="container">
+        <!-- Conference -->
+        <section class="section reveal" style="border-top:none;">
+            <h2 class="section-title">Conference</h2>
+
+            <div class="year-head"><h3>2026</h3></div>
+            <ul class="pub-list">
+                <li class="pub">
+                    <span class="pub__badge">PLDI<br>2026</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/pldi26.pdf">CRIS: The Power of Imagination in Hybrid Verification</a></p>
+                        <p class="pub__authors">Yonghee Kim, Taeyoung Yoon, Sanghyun Yi, Jaehyung Lee, Soonwon Moon, Yeji Han, Seonho Lee, Taeyoung Rhee, Yujin Im, Donghyun Nam, <span class="me">Jieung Kim</span>, and Chung-Kil Hur</p>
+                        <p class="pub__venue"><i>Proceedings of the 2026 ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI&rsquo;26)</i>, June 2026. Proc. ACM Program. Lang. 10, PLDI, Article 239.</p>
                     </div>
-                </nav>
-            </div>
-            <!-- Navbar End -->
+                </li>
+            </ul>
 
-                <!-- Carousel Start -->
-                <div class="container p-0">
-                    <div id="blog-carousel" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="w-100" src="img/background.png" alt="Image">
-                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                    <h2 class="mb-3 text-white font-weight-bold">Welcome to Jieung Kim's Page</h2>
-                                </div>
-                            </div>
-                        </div>
+            <div class="year-head"><h3>2025</h3></div>
+            <ul class="pub-list">
+                <li class="pub">
+                    <span class="pub__badge">DSN<br>2025</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/dsn25.pdf">ReCraft: Self-Contained Split, Merge, and Membership Change of Raft Protocol</a></p>
+                        <p class="pub__authors">Kezhi Xiong, Soonwon Moon, Joshua Kang, Bryant Curto, <span class="me">Jieung Kim</span>, and Ji-Yong Shin</p>
+                        <p class="pub__venue"><i>The 55th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN&rsquo;25)</i>, June 2025.</p>
                     </div>
-                </div>
-                <!-- Carousel End -->
+                </li>
+            </ul>
 
-            <!-- Work Experience Start -->
-            <div class="container bg-white pt-5">
-                <div class="row px-3 pb-5">                 
-
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Conference</h2>
-                        <p class="m-0">
-                            <h6 class="mb-4 font-weight-bold">2025</h6>
-                            <li>Kezhi Xiong, Soonwon Moon, Joshua Kang, Bryant Curto, <b>Jieung Kim</b>, and Ji-Yong Shin,
-                                <u><a href="papers/dsn25.pdf">ReCraft: Self-Contained Split, Merge, and Membership Change of Raft Protocol</a></u>
-                                  <i>The 55th Annual IEEE/IFIP International Conference on Dependable Systems and Networks (DSN’25)</i>, June
-                                  2025.</a></li>
-                            <br />                                    
-                            <h6 class="mb-4 font-weight-bold">2024</h6>
-                            <li>Longfei Qiu, Yoonseung Kim, Ji-Yong Shin,
-                                <b>Jieung Kim</b>, Wolf Honore, and Zhong
-                                Shao,
-                                <u><a href="papers/pldi24.pdf">LiDO: Linearizable Byzantine Distributed Objects with
-                                  Refinement-Based Liveness Proofs</a></u>
-                                  <i>Proceedings of 2024 ACM SIGPLAN Conference on Programming
-                                    Language Design and Implementation (PLDI'24)</i>, June
-                                  2024.</a></li>
-                            <li>Wolf Honore, Longfei Qiu, Ji-Yong Shin, Yoonseung Kim,
-                                <b>Jieung Kim</b>, and Zhong
-                                Shao,
-                                <u><a href="papers/oopsla24.pdf">AdoB: Bridging Benign and Byzantine Consensus with Atomic
-                                  Distributed Objects</a></u>
-                                  <i>Proceedings of 2024 ACM SIGPLAN International
-                                    Conference on Object-Oriented Programming, Systems,
-                                    Languages, and Applications (OOPSLA'24)</i>, October
-                                  2024.</li>
-                            <br />
-                            <h6 class="mb-4 font-weight-bold">2022</h6>
-                            <li>Wolf Honore, Ji-Yong Shin, <b>Jieung Kim</b>, and Zhong
-                                Shao,
-                                <u><a href="papers/pldi22.pdf">Adore: Atomic Distributed Objects with Certified
-                                  Reconfiguration</a></u>
-                                <i>Proceedings of 2022 ACM SIGPLAN Conference on Programming
-                                  Language Design and Implementation (PLDI'22)</i>, June
-                                2022.</li>
-                            <br />
-                            <h6 class="mb-4 font-weight-bold">2021</h6>                            
-                            <li>Wolf Honore<b>*</b>, <b>Jieung Kim*</b>, Ji-Yong Shin, and Zhong
-                                Shao,
-                                <u><a href="papers/oopsla21.pdf">Much ADO about Failures: A Fault-Aware Model for
-                                  Compositional Verification of Strongly Consistent
-                                  Distributed Systems</a></u>
-                                <i>Proceedings of 2021 ACM SIGPLAN International
-                                  Conference on Object-Oriented Programming, Systems,
-                                  Languages, and Applications (OOPSLA'21)</i>, October
-                                2021. (<b>*: both equally contribute to this work</b>)</li>
-                            <br />
-                            <h6 class="mb-4 font-weight-bold">Before 2020</h6>
-                            <li>Ji-Yong Shin, <b>Jieung Kim</b>, Wolf Honore, Hernan Vanzetto,
-                                Srihari Radhakrishnan, Mahesh Balakrishnan, and Zhong Shao ,
-                                <u><a href="papers/socc19.pdf">WormSpace: A Modular Foundation for Simple, Verifiable
-                                  Distributed Systems</a></u>,
-                                <i>ACM Symposium on Cloud Computing 2019 (SoCC ’19)</i>, November
-                                2019.</li>
-
-                            <li>Ronghui Gu, Zhong Shao, <b>Jieung Kim</b>, Xiongnan (Newman) Wu,
-                                Jeremie Koenig, Vilhelm Sjoberg, Hao Chen, David Costanzo, and
-                                Tahina Ramananandro,
-                                <u><a href="papers/pldi18.pdf">Certified Concurrent Abstraction Layers</a></u>,
-                                <i>Proceedings of 2018 ACM SIGPLAN Conference on Programming
-                                  Language Design and Implementation</i>, June 2018.</li>
-
-                            <li><b>Jieung Kim</b>, Vilhelm Sjoberg, Ronghui Gu, and Zhong Shao,
-                                <u><a href="papers/aplas17.pdf">Safety and Liveness of MCS Lock—Layer by Layer</a></u>,
-                                <i>Proceedings of the 15th Asian Symposium on Programming
-                                  Languages
-                                  and Systems</i>, November 2017.</li>
-                            <li>Ronghui Gu, Zhong Shao, Hao Chen, Xiongnan (Newman) Wu, <b>Jieung
-                                Kim</b>, Vilhelm Sjoberg, and David Costanzo,
-                              <u><a href="papers/osdi16.pdf">CertiKOS: An Extensible Architecture for Building Certified
-                                Concurrent OS Kernels</a></u>,
-                              <i>12th USENIX Symposium on Operating Systems Design and
-                                Implementation (OSDI 16)</i>, November 2016.</li>
-                            <li><b>Jieung Kim</b>, Sukyoung Ryu, Victor Luchangco, and Guy L.
-                                Steele
-                                Jr.,
-                                <u><a href="papers/aplas13.pdf">Fine-Grained Function Visibility for Multiple Dispatch with
-                                  Multiple Inheritance</a></u>,
-                                <i>Proceedings of the 11th Asian Symposium on Programming
-                                  Languages
-                                  and Systems</i>, December 2013.</li>
-
-                            <li><b>Jieung Kim</b> and Sukyoung Ryu,
-                                <u><a href="papers/cpp11.pdf">Coq Mechanization of Featherweight Fortress with Multiple
-                                  Dispatch and Multiple Inheritance</a></u>,
-                                <i>The First International Conference on Certified Programs and
-                                  Proofs</i>, December 2011.</li>
-                        </p>
-                    </div>  
-
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Workshop</h2>
-                        <p class="m-0">
-                            <h6 class="mb-4 font-weight-bold">2025</h6>
-                            <li>Bryant J. Curto, Jeonghyeon Kim, Alan Wang, <b>Gijung Im</b>, <b>Jieung Kim</b>, Jeehoon Kang, Ji-Yong Shin,
-                                <u><a href="papers/plos25.pdf">Compositional Model-Driven Verification of Weakly Consistent Distributed Systems</a></u>,
-                                <i>Proceedings of the 13th Workshop on Programming Languages and Operating Systems (PLOS' 25)</i>, October 2025.</li>
-                        </p>
-                    </div>    
-
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Journal</h2>
-                        <p class="m-0">
-                            <h6 class="mb-4 font-weight-bold">2024</h6>
-                            <li><b>Jieung Kim</b>, Jeremie Koenig, Hao Chen, Ronghui Gu, and Zhong
-                                Shao,
-                                <u><a href="papers/jsa24b.pdf">ThreadAbs: A Template for Building Verified Thread-local
-                                  Interfaces with Software Scheduler Abstractions</a></u>,
-                                <i>Journal of Systems Architecture</i>, Volume 147, Article 103046, February 2024.</li>
-                            <li><b>Jieung Kim</b>, Ronghui Gu, and Zhong
-                                Shao,
-                                <u><a href="papers/jsa24a.pdf">SimplMM: A Simplified and Abstract Multicore Hardware Model for
-                                  Large Scale System Software Formal Verification</a></u>,
-                                <i>Journal of Systems Architecture</i>, Volume 147, Article 103046, February 2024.</li>
-                            <br />
-                            <h6 class="mb-4 font-weight-bold">Before 2020</h6>    
-                            <li>Ronghui Gu, Zhong Shao, Hao Chen, <b>Jieung Kim</b>, Jeremie
-                                Koenig,
-                                Xiongnan (Newman) Wu, Vilhelm Sjoberg, and David Costanzo,
-                                <u><a href="papers/cacm19.pdf">Building Certified Concurrent OS Kernels</a></u>,
-                                <i>Communications of the ACM, 62(10)</i>, pages 89-99, October
-                                2019.</li>
-                        </p>
-                    </div>      
-
-
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Technical Report</h2>
-                        <p class="m-0">
-                            <li>Ji-Yong Shin, <b>Jieung Kim</b>, Wolf Honore, Hernan Vanzetto,
-                                Srihari Radhakrishnan, Mahesh Balakrishnan, and Zhong Shao,
-                                <u>Write-Once-Registers: A Modular Foundation for Simple,
-                                  Verifiable
-                                  Distributed Systems</u>,
-                                <i>Technical report - YALEU/DCS/TR1544</i>, December 2018</li>
-                            <li><b>Jieung Kim</b> and Sukyoung Ryu, <u>Coq Mechanization of
-                                Featherweight Basic Core Fortress for Type Soundness</u>,
-                              <i>Technical Report (ROSAEC-2011-011)</i>, May 2011.</li>
-                        </p>
+            <div class="year-head"><h3>2024</h3></div>
+            <ul class="pub-list">
+                <li class="pub">
+                    <span class="pub__badge">PLDI<br>2024</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/pldi24.pdf">LiDO: Linearizable Byzantine Distributed Objects with Refinement-Based Liveness Proofs</a></p>
+                        <p class="pub__authors">Longfei Qiu, Yoonseung Kim, Ji-Yong Shin, <span class="me">Jieung Kim</span>, Wolf Honore, and Zhong Shao</p>
+                        <p class="pub__venue"><i>Proceedings of 2024 ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI&rsquo;24)</i>, June 2024.</p>
                     </div>
-
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Domestic Journal and Conference</h2>
-                        <p class="m-0">
-                            <li><b>김지응</b>,
-                                <u>정형 검증을 통한 동시성 소프트웨어의 추상화 명세 제공 (Provide abstracted specifications
-                                  for concurrent software with formal verification)</u>
-                                <i>정보과학회지 제41권 제6호(통권 제409호)</i>, June 2023.</li>
-                        </p>
+                </li>
+                <li class="pub">
+                    <span class="pub__badge">OOPSLA<br>2024</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/oopsla24.pdf">AdoB: Bridging Benign and Byzantine Consensus with Atomic Distributed Objects</a></p>
+                        <p class="pub__authors">Wolf Honore, Longfei Qiu, Ji-Yong Shin, Yoonseung Kim, <span class="me">Jieung Kim</span>, and Zhong Shao</p>
+                        <p class="pub__venue"><i>Proceedings of 2024 ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA&rsquo;24)</i>, October 2024.</p>
                     </div>
+                </li>
+            </ul>
 
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Working Papers</h2>
-                        <p class="m-0">
-                            <li>Kezhi Xiong, Soonwon Moon, Joshua Hankyul Kang, Bryant Curto,
-                                <b>Jieung Kim</b>, and Ji-Yong Shin,
-                                <u>ReCraft: Split, Merge, and Membership Change of Raft in etcd</u>, (in review).</li>
-                        </p>
+            <div class="year-head"><h3>2022</h3></div>
+            <ul class="pub-list">
+                <li class="pub">
+                    <span class="pub__badge">PLDI<br>2022</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/pldi22.pdf">Adore: Atomic Distributed Objects with Certified Reconfiguration</a></p>
+                        <p class="pub__authors">Wolf Honore, Ji-Yong Shin, <span class="me">Jieung Kim</span>, and Zhong Shao</p>
+                        <p class="pub__venue"><i>Proceedings of 2022 ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI&rsquo;22)</i>, June 2022.</p>
                     </div>
+                </li>
+            </ul>
 
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Thesis</h2>
-                        <p class="m-0">
-                            <li>
-                            <b>Jieung Kim</b> (Yale University), <u>Modular and Compositional
-                                Development of Certified Concurrent Software Systems</u> (Ph.D.
-                              Thesis)</li>
-                              <li>
-                              <b>Jieung Kim</b> (KAIST), <u>Proving FFMM Type Safety Using Coq</u>
-                              (MS Thesis)</li>
-                        </p>
-                    </div>              
+            <div class="year-head"><h3>2021</h3></div>
+            <ul class="pub-list">
+                <li class="pub">
+                    <span class="pub__badge">OOPSLA<br>2021</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/oopsla21.pdf">Much ADO about Failures: A Fault-Aware Model for Compositional Verification of Strongly Consistent Distributed Systems</a></p>
+                        <p class="pub__authors">Wolf Honore<b>*</b>, <span class="me">Jieung Kim*</span>, Ji-Yong Shin, and Zhong Shao</p>
+                        <p class="pub__venue"><i>Proceedings of 2021 ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications (OOPSLA&rsquo;21)</i>, October 2021. <span class="pub__note">(*: both equally contribute to this work)</span></p>
+                    </div>
+                </li>
+            </ul>
 
-                </div>
-            </div>
+            <div class="year-head"><h3>Before 2020</h3></div>
+            <ul class="pub-list">
+                <li class="pub">
+                    <span class="pub__badge">SoCC<br>2019</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/socc19.pdf">WormSpace: A Modular Foundation for Simple, Verifiable Distributed Systems</a></p>
+                        <p class="pub__authors">Ji-Yong Shin, <span class="me">Jieung Kim</span>, Wolf Honore, Hernan Vanzetto, Srihari Radhakrishnan, Mahesh Balakrishnan, and Zhong Shao</p>
+                        <p class="pub__venue"><i>ACM Symposium on Cloud Computing 2019 (SoCC&rsquo;19)</i>, November 2019.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <span class="pub__badge">PLDI<br>2018</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/pldi18.pdf">Certified Concurrent Abstraction Layers</a></p>
+                        <p class="pub__authors">Ronghui Gu, Zhong Shao, <span class="me">Jieung Kim</span>, Xiongnan (Newman) Wu, Jeremie Koenig, Vilhelm Sjoberg, Hao Chen, David Costanzo, and Tahina Ramananandro</p>
+                        <p class="pub__venue"><i>Proceedings of 2018 ACM SIGPLAN Conference on Programming Language Design and Implementation</i>, June 2018.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <span class="pub__badge">APLAS<br>2017</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/aplas17.pdf">Safety and Liveness of MCS Lock&mdash;Layer by Layer</a></p>
+                        <p class="pub__authors"><span class="me">Jieung Kim</span>, Vilhelm Sjoberg, Ronghui Gu, and Zhong Shao</p>
+                        <p class="pub__venue"><i>Proceedings of the 15th Asian Symposium on Programming Languages and Systems</i>, November 2017.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <span class="pub__badge">OSDI<br>2016</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/osdi16.pdf">CertiKOS: An Extensible Architecture for Building Certified Concurrent OS Kernels</a></p>
+                        <p class="pub__authors">Ronghui Gu, Zhong Shao, Hao Chen, Xiongnan (Newman) Wu, <span class="me">Jieung Kim</span>, Vilhelm Sjoberg, and David Costanzo</p>
+                        <p class="pub__venue"><i>12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16)</i>, November 2016.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <span class="pub__badge">APLAS<br>2013</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/aplas13.pdf">Fine-Grained Function Visibility for Multiple Dispatch with Multiple Inheritance</a></p>
+                        <p class="pub__authors"><span class="me">Jieung Kim</span>, Sukyoung Ryu, Victor Luchangco, and Guy L. Steele Jr.</p>
+                        <p class="pub__venue"><i>Proceedings of the 11th Asian Symposium on Programming Languages and Systems</i>, December 2013.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <span class="pub__badge">CPP<br>2011</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/cpp11.pdf">Coq Mechanization of Featherweight Fortress with Multiple Dispatch and Multiple Inheritance</a></p>
+                        <p class="pub__authors"><span class="me">Jieung Kim</span> and Sukyoung Ryu</p>
+                        <p class="pub__venue"><i>The First International Conference on Certified Programs and Proofs</i>, December 2011.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
+        <!-- Workshop -->
+        <section class="section reveal">
+            <h2 class="section-title">Workshop</h2>
+            <ul class="pub-list">
+                <li class="pub">
+                    <span class="pub__badge">PLOS<br>2025</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/plos25.pdf">Compositional Model-Driven Verification of Weakly Consistent Distributed Systems</a></p>
+                        <p class="pub__authors">Bryant J. Curto, Jeonghyeon Kim, Alan Wang, <span class="me">Gijung Im</span>, <span class="me">Jieung Kim</span>, Jeehoon Kang, and Ji-Yong Shin</p>
+                        <p class="pub__venue"><i>Proceedings of the 13th Workshop on Programming Languages and Operating Systems (PLOS&rsquo;25)</i>, October 2025.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
+        <!-- Journal -->
+        <section class="section reveal">
+            <h2 class="section-title">Journal</h2>
+            <ul class="pub-list">
+                <li class="pub">
+                    <span class="pub__badge">JSA<br>2024</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/jsa24b.pdf">ThreadAbs: A Template for Building Verified Thread-local Interfaces with Software Scheduler Abstractions</a></p>
+                        <p class="pub__authors"><span class="me">Jieung Kim</span>, Jeremie Koenig, Hao Chen, Ronghui Gu, and Zhong Shao</p>
+                        <p class="pub__venue"><i>Journal of Systems Architecture</i>, Volume 147, Article 103046, February 2024.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <span class="pub__badge">JSA<br>2024</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/jsa24a.pdf">SimplMM: A Simplified and Abstract Multicore Hardware Model for Large Scale System Software Formal Verification</a></p>
+                        <p class="pub__authors"><span class="me">Jieung Kim</span>, Ronghui Gu, and Zhong Shao</p>
+                        <p class="pub__venue"><i>Journal of Systems Architecture</i>, Volume 147, Article 103046, February 2024.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <span class="pub__badge">CACM<br>2019</span>
+                    <div>
+                        <p class="pub__title"><a href="papers/cacm19.pdf">Building Certified Concurrent OS Kernels</a></p>
+                        <p class="pub__authors">Ronghui Gu, Zhong Shao, Hao Chen, <span class="me">Jieung Kim</span>, Jeremie Koenig, Xiongnan (Newman) Wu, Vilhelm Sjoberg, and David Costanzo</p>
+                        <p class="pub__venue"><i>Communications of the ACM, 62(10)</i>, pages 89&ndash;99, October 2019.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-            <!-- Footer Start -->
-            <div class="container py-4 bg-secondary text-center">
-                <p class="m-0 text-white">
-                    &copy; <a class="text-white font-weight-bold" href="https://jieung.kim">Jieung Kim</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-                </p>
-            </div>
-            <!-- Footer End -->
+        <!-- Technical Report -->
+        <section class="section reveal">
+            <h2 class="section-title">Technical Report</h2>
+            <ul class="pub-list">
+                <li class="pub">
+                    <span class="pub__badge">TR<br>2018</span>
+                    <div>
+                        <p class="pub__title">Write-Once-Registers: A Modular Foundation for Simple, Verifiable Distributed Systems</p>
+                        <p class="pub__authors">Ji-Yong Shin, <span class="me">Jieung Kim</span>, Wolf Honore, Hernan Vanzetto, Srihari Radhakrishnan, Mahesh Balakrishnan, and Zhong Shao</p>
+                        <p class="pub__venue"><i>Technical report &mdash; YALEU/DCS/TR1544</i>, December 2018.</p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <span class="pub__badge">TR<br>2011</span>
+                    <div>
+                        <p class="pub__title">Coq Mechanization of Featherweight Basic Core Fortress for Type Soundness</p>
+                        <p class="pub__authors"><span class="me">Jieung Kim</span> and Sukyoung Ryu</p>
+                        <p class="pub__venue"><i>Technical Report (ROSAEC-2011-011)</i>, May 2011.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Domestic -->
+        <section class="section reveal">
+            <h2 class="section-title">Domestic Journal and Conference</h2>
+            <ul class="pub-list">
+                <li class="pub">
+                    <span class="pub__badge">KIISE<br>2023</span>
+                    <div>
+                        <p class="pub__title">정형 검증을 통한 동시성 소프트웨어의 추상화 명세 제공 (Provide abstracted specifications for concurrent software with formal verification)</p>
+                        <p class="pub__authors"><span class="me">김지응</span></p>
+                        <p class="pub__venue"><i>정보과학회지 제41권 제6호(통권 제409호)</i>, June 2023.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Working Papers -->
+        <section class="section reveal">
+            <h2 class="section-title">Working Papers</h2>
+            <ul class="pub-list">
+                <li class="pub">
+                    <span class="pub__badge">In<br>review</span>
+                    <div>
+                        <p class="pub__title">ReCraft: Split, Merge, and Membership Change of Raft in etcd</p>
+                        <p class="pub__authors">Kezhi Xiong, Soonwon Moon, Joshua Hankyul Kang, Bryant Curto, <span class="me">Jieung Kim</span>, and Ji-Yong Shin</p>
+                        <p class="pub__venue">(in review)</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Thesis -->
+        <section class="section reveal">
+            <h2 class="section-title">Thesis</h2>
+            <ul class="pub-list">
+                <li class="pub">
+                    <span class="pub__badge">Ph.D<br>Yale</span>
+                    <div>
+                        <p class="pub__title">Modular and Compositional Development of Certified Concurrent Software Systems</p>
+                        <p class="pub__authors"><span class="me">Jieung Kim</span>, Yale University</p>
+                        <p class="pub__venue"><i>Ph.D. Thesis</i></p>
+                    </div>
+                </li>
+                <li class="pub">
+                    <span class="pub__badge">MS<br>KAIST</span>
+                    <div>
+                        <p class="pub__title">Proving FFMM Type Safety Using Coq</p>
+                        <p class="pub__authors"><span class="me">Jieung Kim</span>, KAIST</p>
+                        <p class="pub__venue"><i>MS Thesis</i></p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span>&copy; 2026 <a href="https://jieung.kim">Jieung Kim</a>. All rights reserved.</span>
+            <span>Yonsei University &middot; Seoul, Korea</span>
         </div>
-    </div>
+    </footer>
 
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a href="#" class="to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/site.js"></script>
 </body>
-
 </html>

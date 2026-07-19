@@ -1,238 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Jieung Kim</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="Free Website Template" name="keywords">
-        <meta content="Free Website Template" name="description">
-
-        <!-- Favicon -->
-        <link href="img/favicon.ico" rel="icon">
-
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:300;400;600;700;800&display=swap" rel="stylesheet">
-
-        <!-- Font Awesome -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-
-        <!-- Customized Bootstrap Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-
+<head>
+    <meta charset="utf-8">
+    <title>About — Jieung Kim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Jieung Kim — work experience, education, awards, and professional services.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f57d8'/%3E%3Ctext x='32' y='45' font-family='Arial' font-size='34' font-weight='700' fill='white' text-anchor='middle'%3EJK%3C/text%3E%3C/svg%3E">
+    <script>(function(){try{var t=localStorage.getItem('jk-theme');if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link href="css/modern.css" rel="stylesheet">
+</head>
 <body>
-    <div class="wrapper">
-        <div class="sidebar">
-            <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">                   
-                <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" src="img/profile.jpg" alt="Image">
-                <h1 class="font-weight-bold">Jieung Kim</h1>
-                <p class="mb-4">
-                    I am Jieung Kim,</br>
-                    an <b>assistant professor</b> in the <b>Department of Computer Science</b>, <b>College of Computing</b></br> 
-                    at <b>Yonsei University</b>, 
-                    South Korea. </br>
-                    I am interested in designing secure-guaranteed systems using multiple formal techniques.
-                </p>
-                <div class="d-flex justify-content-center mb-5">
-                    <a class="btn btn-outline-primary mr-2" href="https://www.facebook.com/jieung.gabe.kim/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary mr-2" href="https://www.linkedin.com/in/jieungkim/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <a href="https://docs.google.com/document/d/1AX3h8Ws3Rb5N-RKGnJyiLlyXVIiErwRFxwdGfQD0ruk/edit?usp=sharing">
-                    <u>Curriculum Vitae</u></a> 
-                    <a href="https://scholar.google.com/citations?hl=ko&user=HbBHX4IAAAAJ"><u>Google Scholar</u></a> <a
-                    href="https://dblp.org/pid/64/10475.html"><u>DBLP</u></a>
-            </div>
-            <div class="sidebar-icon d-flex flex-column h-100 justify-content-center text-right">
-                <i class="fas fa-2x fa-angle-double-right text-primary"></i>
+    <!-- Navbar -->
+    <header class="nav">
+        <div class="nav__inner">
+            <a class="nav__brand" href="index.html">Jieung&nbsp;Kim</a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="publication.html">Publications</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a class="ext-arrow" href="https://sites.google.com/view/fcai-lab" target="_blank" rel="noopener">FCAI Lab</a></li>
+                </ul>
+            </nav>
+            <div class="nav__right">
+                <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+                <button class="nav__burger" type="button" aria-label="Menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
             </div>
         </div>
-        <div class="content">
-            <!-- Navbar Start -->
-            <div class="container p-0">
-                <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
-                    <a href="" class="navbar-brand d-block d-lg-none">Navigation</a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav m-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu">
-                                    <a href="projects.html" class="dropdown-item">Projects</a>
-                                    <a href="publication.html" class="dropdown-item">Publication</a>
-                                    <a href="blog.html" class="dropdown-item">Blog</a>
-                                </div>
-                            </div>
-                            <a href="https://sites.google.com/view/fcai-lab" class="nav-item nav-link">FCAI Lab.</a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <!-- Navbar End -->
+    </header>
 
-                <!-- Carousel Start -->
-                <div class="container p-0">
-                    <div id="blog-carousel" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="w-100" src="img/background.png" alt="Image">
-                                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                                    <h2 class="mb-3 text-white font-weight-bold">Welcome to Jieung Kim's Page</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Carousel End -->
-
-            <!-- Work Experience Start -->
-            <div class="container bg-white pt-5">
-                <div class="row px-3 pb-5">
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Work Experience</h2>
-                        <p class="m-0">
-                            <h5>Assistant Professor - Yonsei University (Sep. 2024 ~ Current)</h5> 
-                            <li>Department of Computer Science</li>
-                            <li>College of Computing</li>
-                            <li>Yonsei University</li>
-
-                            <h5>Assistant Professor - Inha University (Sep. 2022 ~ Aug. 2024)</h5> 
-                            <li>Department of Computer Engineering</li>
-                            <li>College of Software and Convergence</li>
-                            <li>Inha University</li>
-                            
-                            <h5>Research Engineer (Privacy & Security) - Google (May 2020 ~ Aug. 2022)</h5>
-                            <li>Model Optimization Team, Core ML, Google (Mar. 2022 ~ Aug. 2022)</li>
-                            <li>Cerebra (Personal AI), Google Research, Google (May 2020 ~ Feb. 2022)</li>
-                            
-                            <h5>Postdoctoral Associate - Yale University (Jun. 2019 ~ Apr. 2020)</h5>
-                            <li>The FLINT Group</li>
-                            <li>Department of Computer Science</li>
-                            <li>School of Engineering & Applied Science</li>
-                            <li>Yale University</li>
-                            
-                            <h5>Research Assistant - KAIST (Sep. 2011 ~ Jun. 2012)</h5>
-                            <li>PLRG</li>
-                            <li>Department of Computer Science</li>
-                            <li>Korea Advanced Institute of Science and Technology</li>
-                        </p>
-                    </div>
-
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Education</h2>
-                        <p class="m-0">
-                            <h5>Ph.D in Computer Science - Yale University (Sep. 2012 ~ May 2019)</h5> 
-                            <li>Department of Computer Science</li>
-                            <li>School of Engineering & Applied Science</li>
-                            <li><b>Advisor</b>: Zhong Shao</li>
-                            <li><b>Thesis</b>: Modular and Compositional Development of Certified Concurrent Software Systems</li>
-
-                            <h5>M.S in Computer Science - KAIST (Sep. 2009 ~ Aug. 2011)</h5> 
-                            <li>Department of Computer Science</li>
-                            <li>Korea Advanced Institute of Science and Technology</li>
-                            <li><b>Advisor</b>: Sukyoung Ryu</li>
-                            <li><b>Thesis</b>: Proving FFMM Type Safety Using Coq</li>
-
-                            <h5>B.S. in Engineering - Sungkyunkwan University (Mar. 2002 ~ Aug. 2009)</h5> 
-                            <li>Department of Computer Engineering</li>
-                            <li>School of Information and Communication Engineering</li>                            
-                        </p>
-                    </div>
-
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Awards</h2>
-                        <p class="m-0">
-                            <h5>Robert Willets Carle Scholarship Fund #2 (Jan. 2015)</h5> 
-                            <li>Department of Computer Science</li>
-                            <li>School of Engineering & Applied Science</li>
-                            <li>Yale University</li>
-
-                            <h5>Doctoral Fellowship (Sep. 2012 ~ Jun. 2013)</h5> 
-                            <li>Department of Computer Science</li>
-                            <li>School of Engineering & Applied Science</li>
-                            <li>Yale University</li>
-
-                            <h5>An Outstanding MS Thesis (Feb. 2012)</h5> 
-                            <li>Department of Computer Science</li>
-                            <li>Korea Advanced Institute of Science and Technology</li>                            
-                        </p>
-                    </div>
-
-                    <div class="col-md-12">
-                        <h2 class="mb-4 font-weight-bold">Professional Services</h2>
-                        <p class="m-0">
-                            <h5>PC Member</h5> 
-                            <li>APLAS 2023, APSEC 2023, ANT 2024</li>
-
-                            <h5>OC Member</h5> 
-                            <li>PLDI 2025 (Co-local chair)</li>
-                        </p>
-                    </div>                    
-
-                    <div class="col-md-12">
-                    <h2 class="mb-4 font-weight-bold">Miscellaneous</h2>
-                    <p class="m-0">
-                        <h5>Korean Translation Team (Jan. 2009 ~ Mar.
-                            2009)</h5> 
-                        <li>Rocket IDE</li>
-
-                        <h5>Director (Sep. 2014 ~ Aug. 2015)</h5> 
-                        <li>Korean Graduate Student Association at Yale</li>
-                        <li>Yale University</li>
-
-                        <h5>President (Sep. 2013 ~ Aug. 2014)</h5> 
-                        <li>Korean Graduate Student Association at Yale</li>
-                        <li>Yale University</li>
-
-                        <h5>Student Representative Member (President) (Jan. 2010 ~ Dec. 2010)</h5> 
-                        <li>Of Graduated Study </li>
+    <main class="container">
+        <!-- Work Experience -->
+        <section class="section reveal" style="border-top:none;">
+            <h2 class="section-title">Work Experience</h2>
+            <ul class="timeline">
+                <li>
+                    <p class="tl__head">Assistant Professor &mdash; Yonsei University</p>
+                    <span class="tl__meta">Sep. 2024 &ndash; Current</span>
+                    <ul class="tl__body">
                         <li>Department of Computer Science</li>
+                        <li>College of Computing</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="tl__head">Assistant Professor &mdash; Inha University</p>
+                    <span class="tl__meta">Sep. 2022 &ndash; Aug. 2024</span>
+                    <ul class="tl__body">
+                        <li>Department of Computer Engineering</li>
+                        <li>College of Software and Convergence</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="tl__head">Research Engineer (Privacy &amp; Security) &mdash; Google</p>
+                    <span class="tl__meta">May 2020 &ndash; Aug. 2022</span>
+                    <ul class="tl__body">
+                        <li>Model Optimization Team, Core ML, Google (Mar. 2022 &ndash; Aug. 2022)</li>
+                        <li>Cerebra (Personal AI), Google Research, Google (May 2020 &ndash; Feb. 2022)</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="tl__head">Postdoctoral Associate &mdash; Yale University</p>
+                    <span class="tl__meta">Jun. 2019 &ndash; Apr. 2020</span>
+                    <ul class="tl__body">
+                        <li>The FLINT Group</li>
+                        <li>Department of Computer Science, School of Engineering &amp; Applied Science</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="tl__head">Research Assistant &mdash; KAIST</p>
+                    <span class="tl__meta">Sep. 2011 &ndash; Jun. 2012</span>
+                    <ul class="tl__body">
+                        <li>PLRG, Department of Computer Science</li>
                         <li>Korea Advanced Institute of Science and Technology</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
+        <!-- Education -->
+        <section class="section reveal">
+            <h2 class="section-title">Education</h2>
+            <ul class="timeline">
+                <li>
+                    <p class="tl__head">Ph.D. in Computer Science &mdash; Yale University</p>
+                    <span class="tl__meta">Sep. 2012 &ndash; May 2019</span>
+                    <ul class="tl__body">
+                        <li>Department of Computer Science, School of Engineering &amp; Applied Science</li>
+                        <li><b>Advisor:</b> Zhong Shao</li>
+                        <li><b>Thesis:</b> Modular and Compositional Development of Certified Concurrent Software Systems</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="tl__head">M.S. in Computer Science &mdash; KAIST</p>
+                    <span class="tl__meta">Sep. 2009 &ndash; Aug. 2011</span>
+                    <ul class="tl__body">
+                        <li>Department of Computer Science</li>
+                        <li><b>Advisor:</b> Sukyoung Ryu</li>
+                        <li><b>Thesis:</b> Proving FFMM Type Safety Using Coq</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="tl__head">B.S. in Engineering &mdash; Sungkyunkwan University</p>
+                    <span class="tl__meta">Mar. 2002 &ndash; Aug. 2009</span>
+                    <ul class="tl__body">
+                        <li>Department of Computer Engineering</li>
+                        <li>School of Information and Communication Engineering</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-                        <h5>Lifeguard (Jun. 2005 ~ Aug. 2008)</h5> 
-                        <li>Issued by American Red Cross</li>
-                        <li>Pool lifeguard at Camp Long and Eagle of U.S. Army in 
+        <!-- Awards -->
+        <section class="section reveal">
+            <h2 class="section-title">Awards</h2>
+            <ul class="timeline">
+                <li>
+                    <p class="tl__head">Robert Willets Carle Scholarship Fund #2</p>
+                    <span class="tl__meta">Jan. 2015</span>
+                    <ul class="tl__body">
+                        <li>Department of Computer Science, School of Engineering &amp; Applied Science, Yale University</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="tl__head">Doctoral Fellowship</p>
+                    <span class="tl__meta">Sep. 2012 &ndash; Jun. 2013</span>
+                    <ul class="tl__body">
+                        <li>Department of Computer Science, School of Engineering &amp; Applied Science, Yale University</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="tl__head">Outstanding MS Thesis</p>
+                    <span class="tl__meta">Feb. 2012</span>
+                    <ul class="tl__body">
+                        <li>Department of Computer Science, Korea Advanced Institute of Science and Technology</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
-                        <h5>Advanced Open Water Diver (Feb. 2004)</h5> 
-                        <li>Issued by PADI</li>
+        <!-- Professional Services -->
+        <section class="section reveal">
+            <h2 class="section-title">Professional Services</h2>
+            <ul class="timeline">
+                <li>
+                    <p class="tl__head">Program Committee Member</p>
+                    <ul class="tl__body">
+                        <li>APLAS 2023, APSEC 2023, ANT 2024</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="tl__head">Organizing Committee Member</p>
+                    <ul class="tl__body">
+                        <li>PLDI 2025 (Co-local chair)</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="tl__head">Organizer</p>
+                    <ul class="tl__body">
+                        <li><a href="https://gdg.community.dev/gdg-ai-for-science-korea/" target="_blank" rel="noopener">GDG AI for Science Korea</a> (Google Developer Group)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Miscellaneous -->
+        <section class="section reveal">
+            <h2 class="section-title">Miscellaneous</h2>
+            <ul class="timeline">
+                <li>
+                    <p class="tl__head">Illustration &mdash; hobby</p>
+                    <ul class="tl__body">
+                        <li>I draw illustrations in my spare time. See my work on Instagram: <a href="https://www.instagram.com/hasutudio/" target="_blank" rel="noopener">@hasutudio</a>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="tl__head">Korean Translation Team &mdash; Rocket IDE</p>
+                    <span class="tl__meta">Jan. 2009 &ndash; Mar. 2009</span>
+                </li>
+                <li>
+                    <p class="tl__head">Director &mdash; Korean Graduate Student Association at Yale</p>
+                    <span class="tl__meta">Sep. 2014 &ndash; Aug. 2015</span>
+                </li>
+                <li>
+                    <p class="tl__head">President &mdash; Korean Graduate Student Association at Yale</p>
+                    <span class="tl__meta">Sep. 2013 &ndash; Aug. 2014</span>
+                </li>
+                <li>
+                    <p class="tl__head">Student Representative Member (President) &mdash; Graduate Study, CS, KAIST</p>
+                    <span class="tl__meta">Jan. 2010 &ndash; Dec. 2010</span>
+                </li>
+                <li>
+                    <p class="tl__head">Lifeguard &mdash; American Red Cross</p>
+                    <span class="tl__meta">Jun. 2005 &ndash; Aug. 2008</span>
+                    <ul class="tl__body">
+                        <li>Pool lifeguard at Camp Long and Camp Eagle, U.S. Army</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="tl__head">Advanced Open Water Diver &mdash; PADI</p>
+                    <span class="tl__meta">Feb. 2004</span>
+                    <ul class="tl__body">
                         <li>Diver number: 0403U16850</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
 
-                    </p>
-                    </div>                    
-                </div>
-            </div>
-
-
-
-            <!-- Footer Start -->
-            <div class="container py-4 bg-secondary text-center">
-                <p class="m-0 text-white">
-                    &copy; <a class="text-white font-weight-bold" href="https://jieung.kim">Jieung Kim</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-                </p>
-            </div>
-            <!-- Footer End -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <span>&copy; 2026 <a href="https://jieung.kim">Jieung Kim</a>. All rights reserved.</span>
+            <span>Yonsei University &middot; Seoul, Korea</span>
         </div>
-    </div>
+    </footer>
 
-    <!-- Back to Top -->
-    <a href="#" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+    <a href="#" class="to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+    </a>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/site.js"></script>
 </body>
-
 </html>
