@@ -59,13 +59,15 @@
         /* ---- Profile media rotator ---- */
         var media = document.getElementById("profile-media");
         if (media) {
+            // representative (shown first) listed first; rest rotate randomly
             var files = [
-                "img/profile1.jpg", "img/profile2.jpg", "img/profile3.jpg",
-                "img/profile4.JPG", "img/profile5.jpg", "img/profile6.jpg",
-                "img/profile7.jpg", "img/profile8.JPG", "img/profile9.JPG",
-                "img/profile10.JPG", "img/profile11.JPG", "img/profile12.mov"
+                "img/profile3.mov",
+                "img/profile1.jpg", "img/profile2.jpg", "img/profile4.JPG",
+                "img/profile5.mov", "img/profile6.jpg", "img/profile7.jpg",
+                "img/profile8.JPG", "img/profile9.JPG", "img/profile10.JPG",
+                "img/profile11.JPG"
             ];
-            var idx = 0;              // currently shown item
+            var idx = -1;             // currently shown item (-1 = nothing rendered yet)
             var timer = null;
             var INTERVAL = 6000;      // auto-rotate every 6s
             var prefersReduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -135,10 +137,8 @@
                 rotator.addEventListener("focusout", start);
             }
 
-            // always start with the dog video, then random-rotate afterwards
-            var firstIdx = files.findIndex(isVideo);
-            if (firstIdx < 0) firstIdx = 0;
-            show(firstIdx);
+            // always start with the representative media (files[0]), then random-rotate
+            show(0);
             start();
         }
 
