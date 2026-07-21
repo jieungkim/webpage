@@ -135,8 +135,10 @@
                 rotator.addEventListener("focusout", start);
             }
 
-            // start from a random image so it's fresh each visit
-            show(Math.floor(Math.random() * files.length));
+            // always start with the dog video, then random-rotate afterwards
+            var firstIdx = files.findIndex(isVideo);
+            if (firstIdx < 0) firstIdx = 0;
+            show(firstIdx);
             start();
         }
 
