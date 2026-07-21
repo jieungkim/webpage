@@ -323,21 +323,23 @@ p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     line-height: 1;
     color: #fff;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.5);
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    opacity: 0;
+    opacity: 0.75;
+    -webkit-tap-highlight-color: transparent;
     transition: opacity 0.2s ease, background 0.2s ease;
+    z-index: 2;
 }
 
 .hero__photo:hover .hero__photo-nav,
@@ -345,12 +347,14 @@ p {
     opacity: 1;
 }
 
-.hero__photo-nav:hover {
-    background: rgba(0, 0, 0, 0.65);
+.hero__photo-nav:hover,
+.hero__photo-nav:active {
+    background: rgba(0, 0, 0, 0.72);
+    opacity: 1;
 }
 
-.hero__photo-nav--prev { left: 6px; }
-.hero__photo-nav--next { right: 6px; }
+.hero__photo-nav--prev { left: 8px; }
+.hero__photo-nav--next { right: 8px; }
 
 .hero__name {
     font-size: clamp(2rem, 5vw, 2.7rem);
