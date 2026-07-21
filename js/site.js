@@ -56,6 +56,90 @@
             reveals.forEach(function (el) { el.classList.add("in"); });
         }
 
+        /* ---- Profile media rotator ---- */
+        var media = document.getElementById("profile-media");
+        if (media) {
+            var files = [
+                "img/profile1.jpg", "img/profile2.jpg", "img/profile3.jpg",
+                "img/profile4.JPG", "img/profile5.jpg", "img/profile6.jpg",
+                "img/profile7.jpg", "img/profile8.JPG", "img/profile9.JPG",
+                "img/profile10.JPG", "img/profile11.JPG", "img/profile12.mov"
+            ];
+            var idx = 0;              // currently shown item
+            var timer = null;
+            var INTERVAL = 6000;      // auto-rotate every 6s
+            var prefersReduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+            function isVideo(src) { return /\.mov$/i.test(src); }
+
+            function build(src) {
+                var el;
+                if (isVideo(src)) {
+                    el = document.createElement("video");
+                    el.src = src;
+                    el.autoplay = true;
+                    el.loop = true;
+                    el.muted = true;
+                    el.playsInline = true;
+                    el.setAttribute("aria-label", "Jieung Kim");
+                } else {
+                    el = document.createElement("img");
+                    el.src = src;
+                    el.width = 210;
+                    el.height = 210;
+                    el.alt = "Jieung Kim";
+                }
+                return el;
+            }
+
+            function show(next) {
+                if (next === idx && media.firstChild) return;
+                idx = (next + files.length) % files.length;
+                media.classList.add("is-fading");
+                setTimeout(function () {
+                    var el = build(files[idx]);
+                    media.innerHTML = "";
+                    media.appendChild(el);
+                    // force reflow so the fade-in transition applies
+                    void media.offsetWidth;
+                    media.classList.remove("is-fading");
+                }, 300);
+            }
+
+            function randomOther() {
+                if (files.length < 2) return idx;
+                var n;
+                do { n = Math.floor(Math.random() * files.length); } while (n === idx);
+                return n;
+            }
+
+            function start() {
+                if (prefersReduced || timer) return;
+                timer = setInterval(function () { show(randomOther()); }, INTERVAL);
+            }
+            function stop() { if (timer) { clearInterval(timer); timer = null; } }
+            function restart() { stop(); start(); }
+
+            // manual controls reset the auto-rotate clock
+            var prev = document.getElementById("profile-prev");
+            var next = document.getElementById("profile-next");
+            if (prev) prev.addEventListener("click", function () { show(idx - 1); restart(); });
+            if (next) next.addEventListener("click", function () { show(idx + 1); restart(); });
+
+            // pause auto-rotation while hovering/focusing
+            var rotator = document.getElementById("profile-rotator");
+            if (rotator) {
+                rotator.addEventListener("mouseenter", stop);
+                rotator.addEventListener("mouseleave", start);
+                rotator.addEventListener("focusin", stop);
+                rotator.addEventListener("focusout", start);
+            }
+
+            // start from a random image so it's fresh each visit
+            show(Math.floor(Math.random() * files.length));
+            start();
+        }
+
         /* ---- Back to top ---- */
         var toTop = document.querySelector(".to-top");
         if (toTop) {
